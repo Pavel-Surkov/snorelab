@@ -12,7 +12,8 @@ module.exports = {
 	output: {
 		path: paths.build,
 		filename: '[name].bundle.js',
-		publicPath: '/'
+		publicPath: '/',
+		assetModuleFilename: 'assets/static/[hash][ext][query]'
 	},
 
 	// Customize the webpack build process
@@ -61,9 +62,44 @@ module.exports = {
 
 			// Images: Copy image files to build folder
 			{
-				test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+				test: /\.(?:ico|gif|png|jpe?g|svg)$/i,
 				type: 'asset/resource'
 			},
+			// {
+			// 	test: /\.(jpe?g|png|gif)$/i,
+			// 	use: [
+			// 		{
+			// 			loader: 'url-loader',
+			// 			options: {
+			// 				// Images larger than 10 KB won’t be inlined
+			// 				limit: 10 * 1024
+			// 			}
+			// 		}
+			// 	]
+			// },
+			// {
+			// 	test: /\.svg$/,
+			// 	use: {
+			// 		loader: 'svg-url-loader',
+			// 		options: {
+			// 			// Images larger than 10 KB won’t be inlined
+			// 			limit: 10 * 1024,
+			// 			// Remove quotes around the encoded URL –
+			// 			// they’re rarely useful
+			// 			noquotes: true
+			// 		}
+			// 	}
+			// },
+			// {
+			// 	test: /\.(jpe?g|png|gif|svg)$/,
+			// 	use: {
+			// 		loader: 'image-webpack-loader'
+			// 		// Specify enforce: 'pre' to apply the loader
+			// 		// before url-loader/svg-url-loader
+			// 		// and not duplicate it in rules with them
+			// 	},
+			// 	enforce: 'pre'
+			// },
 
 			// Fonts and SVGs: Inline files
 			{ test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/inline' }
