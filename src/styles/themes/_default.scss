@@ -4,3 +4,9 @@
 		opacity: 0.8;
 	}
 }
+
+.app {
+	&-container {
+		overflow: hidden;
+	}
+}

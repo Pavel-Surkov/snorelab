@@ -2,9 +2,9 @@ import '@/styles/main.scss';
 
 import ReactDOM from 'react-dom';
 import React from 'react';
-import App from './App';
+import renderPageElement from './App';
 
-ReactDOM.render(<App />, document.querySelector('#root'));
+document.querySelectorAll('.__react-root').forEach(renderPageElement);
 
 // // Test import of a JavaScript module
 // import { example } from '@/js/example';
