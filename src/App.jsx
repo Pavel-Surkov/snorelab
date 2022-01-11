@@ -4,7 +4,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 const App = () => {
 	return (
 		<Router>
-			<p>Application</p>
+			<div className="container">
+				<p>Application</p>
+			</div>
 		</Router>
 	);
 };
