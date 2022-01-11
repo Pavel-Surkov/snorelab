@@ -1,12 +1,11 @@
 import React from 'react';
-import pic from './images/favicon.png';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 const App = () => {
 	return (
-		<div>
+		<Router>
 			<p>Application</p>
-			<img src={pic} />
-		</div>
+		</Router>
 	);
 };
 
