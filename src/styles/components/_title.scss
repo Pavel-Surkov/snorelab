@@ -1,0 +1,38 @@
+.title {
+	margin: 0;
+	font-weight: 700;
+	&_size {
+		&-l {
+			font-size: 7.5rem;
+			line-height: calc(70 / 75);
+			letter-spacing: -0.03em;
+		}
+		&-m {
+			font-size: 4.5rem;
+			line-height: calc(50 / 45);
+			letter-spacing: -0.02em;
+		}
+	}
+	&_fade {
+		background: $title-gradient-blue;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.title {
+		&_size {
+			&-l {
+				font-size: 4rem;
+				line-height: 1;
+				letter-spacing: -0.02em;
+			}
+			&-m {
+				font-size: 3rem;
+				line-height: calc(40 / 30);
+				letter-spacing: 0;
+			}
+		}
+	}
+}

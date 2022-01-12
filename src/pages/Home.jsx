@@ -1,9 +1,10 @@
 import React from 'react';
+import { HomeMain } from '../components/HomeMain';
 
 export const Home = () => {
 	return (
-		<div>
-			<p>HOME</p>
-		</div>
+		<main className="home">
+			<HomeMain />
+		</main>
 	);
 };

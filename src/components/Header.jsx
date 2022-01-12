@@ -26,8 +26,8 @@ const Header = () => {
 				<div className="container">
 					<div className="row">
 						<div className="col-6 col-lg-3">
-							<div className="logo header__logo">
-								<a href="index.html">
+							<div className="header__logo">
+								<a className="logo" href="index.html">
 									<img src={logo} alt="logo" />
 								</a>
 							</div>

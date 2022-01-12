@@ -12,7 +12,10 @@ const PAGES = {
 
 const renderPageElement = el => {
 	const Page = PAGES[el.id];
-	if (!Page) return;
+
+	if (!Page) {
+		return;
+	}
 
 	const props = Object.assign({}, el.dataset);
 

@@ -1,5 +1,5 @@
 .m-menu {
-	position: absolute;
+	position: fixed;
 	background: $black-bg;
 	z-index: 10;
 	width: 100%;
@@ -31,6 +31,19 @@
 		width: 30px;
 		margin: auto 0;
 		margin-left: auto;
+		&_close {
+			& span:first-child {
+				transform: translateX(5px) translateY(8px) rotate(45deg);
+				width: 21px;
+			}
+			& span:nth-child(2) {
+				opacity: 0;
+			}
+			& span:last-child {
+				transform: translateX(5px) translateY(-8px) rotate(-45deg);
+				width: 21px;
+			}
+		}
 		& span {
 			position: absolute;
 			display: inline-block;
@@ -39,6 +52,7 @@
 			border-radius: 10px;
 			left: 0;
 			background: $white;
+			transition: 0.5s;
 			&:first-child {
 				top: 0;
 			}
