@@ -1,0 +1,53 @@
+.m-menu {
+	position: absolute;
+	background: $black-bg;
+	z-index: 10;
+	width: 100%;
+	height: calc(100vh - 70px);
+	left: 0;
+	bottom: 0;
+	transition: 0.4s;
+	transform: translateX(-100%);
+	&_active {
+		transform: translateX(0);
+	}
+	&__navigation {
+		&-list {
+			padding-top: 20px;
+			@include flex(column, center);
+		}
+		&-item {
+			font-size: 1.8rem;
+			line-height: calc(25 / 18);
+			margin-bottom: 30px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__button {
+		position: relative;
+		height: 18px;
+		width: 30px;
+		margin: auto 0;
+		margin-left: auto;
+		& span {
+			position: absolute;
+			display: inline-block;
+			width: 100%;
+			height: 2px;
+			border-radius: 10px;
+			left: 0;
+			background: $white;
+			&:first-child {
+				top: 0;
+			}
+			&:nth-child(2) {
+				top: calc(50% - 1px);
+			}
+			&:last-child {
+				bottom: 0;
+			}
+		}
+	}
+}

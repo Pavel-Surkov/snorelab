@@ -1,12 +1,20 @@
-.link {
+.link,
+.logo {
 	&:hover,
 	&:focus {
 		opacity: 0.8;
 	}
 }
 
+.logo {
+	& a {
+		display: inline-block;
+	}
+}
+
 .app {
-	&-container {
+	&-wrapper {
 		overflow: hidden;
+		background: $black-bg;
 	}
 }

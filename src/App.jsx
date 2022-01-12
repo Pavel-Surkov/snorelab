@@ -1,24 +1,8 @@
 import React from 'react';
-// import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import Header from './components/Header';
-// import Footer from './components/Footer';
-// import { Home } from './pages';
-
-// const App = () => {
-// 	return (
-// 		<BrowserRouter basename="/dist/">
-// 			<div className="app-container">
-// 				<Header />
-// 				<Routes>
-// 					<Route path="/" element={<Home />} />
-// 				</Routes>
-// 				<Footer />
-// 			</div>
-// 		</BrowserRouter>
-// 	);
-// };
-
 import ReactDOM from 'react-dom';
+
+import Header from './components/Header';
+import Footer from './components/Footer';
 import { Home, HowWorks } from './pages';
 
 const PAGES = {
@@ -32,7 +16,15 @@ const renderPageElement = el => {
 
 	const props = Object.assign({}, el.dataset);
 
-	ReactDOM.render(<Page {...props} />, el);
+	const App = () => (
+		<div className="app-wrapper">
+			<Header />
+			<Page {...props} />
+			<Footer />
+		</div>
+	);
+
+	ReactDOM.render(<App {...props} />, el);
 };
 
 export default renderPageElement;

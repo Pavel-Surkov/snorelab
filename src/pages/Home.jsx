@@ -3,7 +3,7 @@ import React from 'react';
 export const Home = () => {
 	return (
 		<div>
-			<p style={{ color: 'black' }}>HOME</p>
+			<p>HOME</p>
 		</div>
 	);
 };

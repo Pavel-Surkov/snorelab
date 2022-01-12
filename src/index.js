@@ -1,7 +1,4 @@
 import '@/styles/main.scss';
-
-import ReactDOM from 'react-dom';
-import React from 'react';
 import renderPageElement from './App';
 
 document.querySelectorAll('.__react-root').forEach(renderPageElement);

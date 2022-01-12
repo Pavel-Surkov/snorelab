@@ -1,2 +1,48 @@
 .header {
+	&-wrapper {
+		padding: 26px 0;
+		background: $black-bg;
+	}
+	&__logo {
+		& img {
+			height: 44px;
+		}
+	}
+	&__navigation {
+		height: 100%;
+		@include flex(row, center, flex-end);
+		&-list {
+			height: 100%;
+			@include flex(row, center, flex-end);
+		}
+		&-item {
+			font-size: 1.8rem;
+			line-height: calc(25 / 18);
+			margin-right: 32px;
+			font-weight: 400;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.header {
+		&-wrapper {
+			position: fixed;
+			height: 70px;
+			width: 100%;
+			z-index: 20;
+			padding: 20px 0;
+		}
+		&__logo {
+			& a {
+				width: 108px;
+			}
+			& img {
+				height: auto;
+			}
+		}
+	}
 }

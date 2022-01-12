@@ -40,6 +40,7 @@ html {
 @import 'layout/header', 'layout/footer';
 
 // 6. Components
+@import 'components/m-menu';
 
 // 7. Page-specific styles
 @import 'pages/home';

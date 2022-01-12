@@ -43,8 +43,8 @@ $grid-breakpoints: (
 	xs: 0,
 	sm: 576px,
 	md: 768px,
-	lgs: 991px,
-	lg: 1220px,
+	lg: 991px,
+	xl: 1220px,
 	//   xl: 1744px
 ) !default;
 
@@ -58,8 +58,8 @@ $grid-breakpoints: (
 $container-max-widths: (
 	sm: 540px,
 	md: 720px,
-	lgs: 970px,
-	lg: 1200px,
+	lg: 970px,
+	xl: 1200px,
 	//   xl: 1744px
 ) !default;
 
@@ -72,6 +72,10 @@ $container-max-widths: (
 $grid-columns: 12 !default;
 $grid-gutter-width: 10px !default;
 $grid-row-columns: 6 !default;
+
+@media screen and (max-width: 576px) {
+	$grid-gutter-width: 8px;
+}
 
 // Utilities
 
