@@ -116,10 +116,87 @@
 				}
 			}
 		}
+		&__phones {
+			& img:first-child {
+				margin-top: 180px;
+				margin-left: 70px;
+			}
+			& img:nth-child(2) {
+				max-width: 280px;
+				top: 0;
+				right: 100px;
+			}
+			& svg {
+				top: 0;
+				right: -230px;
+				filter: blur(188px);
+			}
+		}
 		&__title {
 			width: 100%;
 			max-width: 328px;
 			margin-bottom: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 756px) {
+	.home-main {
+		&__wrapper {
+			padding-bottom: 50px;
+		}
+		&__phones {
+			& img:first-child {
+				margin-top: 115px;
+				margin-left: 40px;
+				max-width: 259px;
+			}
+			& img:nth-child(2) {
+				max-width: 200px;
+				right: 80px;
+			}
+			& svg {
+				top: 70px;
+				right: -100px;
+				width: 850px;
+				height: 800px;
+				filter: blur(188px);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.home-main {
+		&__info {
+			&-apps {
+				gap: 10px;
+			}
+			&-app {
+				margin: 0;
+				width: calc(50% - 5px);
+				justify-content: center;
+			}
+		}
+		&__phones {
+			& img:first-child {
+				max-width: 179px;
+				margin-left: 50%;
+				transform: translateX(calc(-50% - 50px));
+			}
+			& img:nth-child(2) {
+				max-width: 147px;
+				right: 50%;
+				transform: translateX(calc(50% + 50px)) rotate(15.06deg);
+			}
+			& svg {
+				top: 30px;
+				right: 50%;
+				transform: translateX(50%);
+				width: 450px;
+				height: 400px;
+				filter: blur(80px);
+			}
 		}
 	}
 }
