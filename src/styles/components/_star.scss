@@ -1,0 +1,9 @@
+.star {
+	&-wrapper {
+		display: inline-block;
+		margin-right: 2px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

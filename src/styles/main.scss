@@ -34,13 +34,13 @@ html {
 @import 'base/base', 'base/fonts', 'base/typography', 'base/helpers';
 
 //4. Components
-@import 'components/title', 'components/button';
+@import 'components/title', 'components/button', 'components/star';
 
 // 5. Layout-related sections
 @import 'layout/header', 'layout/footer';
 
 // 6. Components
-@import 'components/m-menu', 'components/home-main', 'components/description';
+@import 'components/m-menu', 'components/home-main', 'components/description', 'components/home-reviews';
 
 // 7. Page-specific styles
 @import 'pages/home';

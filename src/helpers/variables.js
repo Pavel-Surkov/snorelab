@@ -1,9 +1,18 @@
+// Description icons
 import description_1 from '../images/icons/description1.svg';
 import description_2 from '../images/icons/description2.svg';
 import description_3 from '../images/icons/description3.svg';
 import description_4 from '../images/icons/description4.svg';
 import description_5 from '../images/icons/description5.svg';
 import description_6 from '../images/icons/description6.svg';
+
+// Reviews icons
+import review_1 from '../images/icons/review1.png';
+import review_1_2x from '../images/icons/review1@2x.png';
+import review_2 from '../images/icons/review2.png';
+import review_2_2x from '../images/icons/review2@2x.png';
+import review_3 from '../images/icons/review3.png';
+import review_3_2x from '../images/icons/review3@2x.png';
 
 export const navigationLinks = [
 	{ text: 'How SnoreLab Works', link: 'howworks.html' },
@@ -48,5 +57,48 @@ export const descriptionCards = [
 		title: 'Doctor Recommended',
 		text:
 			'Many doctors, dentists and sleep professionals encourage their patients to use SnoreLab to assist their consultations and to measure the success of treatments.'
+	}
+];
+
+export const reviews = [
+	{
+		stars: 5,
+		title: 'Saved me',
+		text:
+			'This app may have literally saved my life. My wife and daughter told me for years that I made awful noises in my sleep. I downloaded this app. For the first time I could hear what I sounded like in my sleep. Absolutely horrifying. My CPAP machine is on its way. Thank you.',
+		icon: `${review_3}`,
+		icon_2x: `${review_3_2x}`
+	},
+	{
+		stars: 5,
+		title: 'Inspired me to loose weight',
+		text:
+			'SnoreLab has helped me track my snoring problem and to realize that it was a weight issue and now I have successfully stopped snoring with some weight loss and constant monitoring from SnoreLab.',
+		icon: `${review_1}`,
+		icon_2x: `${review_1_2x}`
+	},
+	{
+		stars: 5,
+		title: 'Snore tastic!',
+		text:
+			'This must be one of the best apps out there. Totally brilliant and so simple to use. It’s very odd hearing yourself…and what others hear…but cannot recommend this app enough. A million gold stars!!',
+		icon: `${review_2}`,
+		icon_2x: `${review_2_2x}`
+	},
+	{
+		stars: 5,
+		title: 'Saved my life',
+		text:
+			'This app may have literally saved my life. My wife and daughter told me for years that I made awful noises in my sleep. I downloaded this app. For the first time I could hear what I sounded like in my sleep. Absolutely horrifying. My CPAP machine is on its way. Thank you.',
+		icon: `${review_3}`,
+		icon_2x: `${review_3_2x}`
+	},
+	{
+		stars: 5,
+		title: 'Saved life',
+		text:
+			'This app may have literally saved my life. My wife and daughter told me for years that I made awful noises in my sleep. I downloaded this app. For the first time I could hear what I sounded like in my sleep. Absolutely horrifying. My CPAP machine is on its way. Thank you.',
+		icon: `${review_3}`,
+		icon_2x: `${review_3_2x}`
 	}
 ];

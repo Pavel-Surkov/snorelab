@@ -38,5 +38,9 @@
 				letter-spacing: 0;
 			}
 		}
+		&_card {
+			font-size: 2rem;
+			line-height: calc(30 / 20);
+		}
 	}
 }

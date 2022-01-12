@@ -1,0 +1,15 @@
+.home-reviews {
+	&__wrapper {
+		padding: 130px 0;
+		padding-bottom: 170px;
+		background: image('starry-sky-2.png') no-repeat center;
+		text-align: center;
+	}
+	&__title {
+		margin-bottom: 80px;
+		display: inline-block;
+	}
+	& .swiper-slide {
+		// max-width: 587px;
+	}
+}
