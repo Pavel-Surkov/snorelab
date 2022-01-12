@@ -14,7 +14,12 @@ export const HomeMain = () => {
 					<div className="row">
 						<div className="col-12 col-lg-5">
 							<div className="home-main__info">
-								<img className="home-main__info-icon" src={squareLogo} srcSet={squareLogo_2x} alt="" />
+								<img
+									className="home-main__info-icon"
+									src={squareLogo}
+									srcSet={`${squareLogo} 1x, ${squareLogo_2x} 2x`}
+									alt=""
+								/>
 								<h1 className="title title_fade title_size-l home-main__title">
 									SnoreLab: Record&nbsp;Your Snoring
 								</h1>
@@ -342,8 +347,8 @@ export const HomeMain = () => {
 						</div>
 						<div className="col-12 col-lg-7">
 							<div className="home-main__phones">
-								<img src={phone_1} srcSet={phone_1_2x} alt="" />
-								<img src={phone_2} srcSet={phone_2_2x} alt="" />
+								<img src={phone_1} srcSet={`${phone_1} 1x, ${phone_1_2x} 2x`} alt="" />
+								<img src={phone_2} srcSet={`${phone_2} 1x, ${phone_2_2x} 2x`} alt="" />
 								<svg
 									width="1371"
 									height="1309"

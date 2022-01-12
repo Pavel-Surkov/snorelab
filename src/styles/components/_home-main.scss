@@ -3,6 +3,10 @@
 		padding-bottom: 150px;
 	}
 	&__phones {
+		& img,
+		svg {
+			pointer-events: none;
+		}
 		& img:first-child {
 			max-width: 417px;
 			margin-top: 242px;
@@ -28,8 +32,6 @@
 	}
 	&__info {
 		padding-top: 120px;
-		position: relative;
-		z-index: 1;
 		&-icon {
 			margin-bottom: 32px;
 			max-width: 90px;
@@ -140,7 +142,7 @@
 	}
 }
 
-@media screen and (max-width: 756px) {
+@media screen and (max-width: 768px) {
 	.home-main {
 		&__wrapper {
 			padding-bottom: 50px;
