@@ -2,7 +2,9 @@
 	&__wrapper {
 		padding: 130px 0;
 		padding-bottom: 170px;
-		background: image('starry-sky-2.png') no-repeat center;
+		background: linear-gradient(360deg, $black-bg 0px, rgba($white, 0) 60px), image('starry-sky-2.png');
+		background-repeat: no-repeat;
+		background-position: center;
 		text-align: center;
 	}
 	&__pagination {
