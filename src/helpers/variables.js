@@ -20,6 +20,18 @@ import p_description_2 from '../images/icons/p-description2.svg';
 import p_description_3 from '../images/icons/p-description3.svg';
 import p_description_4 from '../images/icons/p-description4.svg';
 
+// Insights backgrounds
+import insight_1 from '../images/insight1.png';
+import insight_1_2x from '../images/insight1@2x.png';
+import insight_2 from '../images/insight2.png';
+import insight_2_2x from '../images/insight2@2x.png';
+import insight_3 from '../images/insight3.png';
+import insight_3_2x from '../images/insight3@2x.png';
+import insight_4 from '../images/insight4.png';
+import insight_4_2x from '../images/insight4@2x.png';
+import insight_5 from '../images/insight5.png';
+import insight_5_2x from '../images/insight5@2x.png';
+
 export const navigationLinks = [
 	{ text: 'How SnoreLab Works', link: 'howworks.html' },
 	{ text: 'Insights', link: '##' },
@@ -130,5 +142,51 @@ export const reviews = [
 			'SnoreLab has helped me track my snoring problem and to realize that it was a weight issue and now I have successfully stopped snoring with some weight loss and constant monitoring from SnoreLab.',
 		icon: `${review_2}`,
 		icon_2x: `${review_2_2x}`
+	}
+];
+
+export const homeInsights = [
+	{
+		big: true,
+		flags: ['Solutions', 'Using Snorelab'],
+		title: 'How Can SnoreLab Help My Snoring?',
+		text:
+			'There are many effective ways to reduce snoring from specialist products to exercises, but different approaches work for different people.',
+		background: {
+			'1x': insight_1,
+			'2x': insight_1_2x
+		}
+	},
+	{
+		flags: ['Solutions', 'Using Snorelab'],
+		title: '20 Common Questions About Snoring Answered',
+		background: {
+			'1x': insight_2,
+			'2x': insight_2_2x
+		}
+	},
+	{
+		flags: ['Solutions', 'Diet & Lifestyle'],
+		title: '5 Easy Habits to Stop Snoring Naturally',
+		background: {
+			'1x': insight_3,
+			'2x': insight_3_2x
+		}
+	},
+	{
+		flags: ['Solutions, Science, Diet & Lifestyle'],
+		title: 'Mouth Exercises for Snoring',
+		background: {
+			'1x': insight_4,
+			'2x': insight_4_2x
+		}
+	},
+	{
+		flags: ['Causes, Science'],
+		title: 'What is Snoring? – An Introduction',
+		background: {
+			'1x': insight_5,
+			'2x': insight_5_2x
+		}
 	}
 ];

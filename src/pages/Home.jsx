@@ -3,6 +3,7 @@ import { HomeMain } from '../components/HomeMain';
 import { HomeDescription } from '../components/HomeDescription';
 import { HomeReviews } from '../components/HomeReviews';
 import { PartnerApp } from '../components/PartnerApp';
+import { HomeInsights } from '../components/HomeInsights';
 
 export const Home = () => {
 	return (
@@ -11,6 +12,7 @@ export const Home = () => {
 			<HomeDescription />
 			<HomeReviews />
 			<PartnerApp />
+			<HomeInsights />
 		</main>
 	);
 };
