@@ -34,11 +34,11 @@ import insight_5_2x from '../images/insight5@2x.png';
 
 export const navigationLinks = [
 	{ text: 'How SnoreLab Works', link: 'howworks.html' },
-	{ text: 'Insights', link: '##' },
-	{ text: 'Remedy Shop', link: '##' },
-	{ text: 'FAQ', link: '##' },
-	{ text: 'Reviews', link: '##' },
-	{ text: 'Contact Us', link: '##' }
+	{ text: 'Insights', link: 'insights.html' },
+	{ text: 'Remedy Shop', link: 'shop.html' },
+	{ text: 'FAQ', link: 'faq.html' },
+	{ text: 'Reviews', link: 'reviews.html' },
+	{ text: 'Contact Us', link: 'contact.html' }
 ];
 
 export const descriptionCards = [
@@ -190,3 +190,17 @@ export const homeInsights = [
 		}
 	}
 ];
+
+export const footerLinks = {
+	support: [
+		{ text: 'Contact us', link: 'contact.html' },
+		{ text: 'FAQ', link: 'faq.html' },
+		{ text: 'Privacy Policy', link: 'privacy.html' },
+		{ text: 'Terms of Use', link: 'terms.html' }
+	],
+	company: [
+		{ text: 'About', link: 'about.html' },
+		{ text: 'Careers', link: 'careers.html' },
+		{ text: 'Press', link: 'press.html' }
+	]
+};

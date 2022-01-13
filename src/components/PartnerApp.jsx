@@ -75,7 +75,7 @@ export const PartnerApp = () => {
 									</svg>
 								</div>
 								<div className="home-partner__phones-bottom">
-									<a href="##" className="home-main__info-app google-play-btn">
+									<a href="##" className="link home-main__info-app google-play-btn">
 										<svg
 											width="28"
 											height="32"
@@ -282,7 +282,7 @@ export const PartnerApp = () => {
 											/>
 										</svg>
 									</a>
-									<a href="##" className="home-main__info-app app-store-btn">
+									<a href="##" className="link home-main__info-app app-store-btn">
 										<svg
 											width="26"
 											height="32"

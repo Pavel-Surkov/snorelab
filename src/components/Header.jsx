@@ -48,6 +48,7 @@ const Header = () => {
 									id="m-menu__button"
 									className="d-lg-none m-menu__button"
 									onClick={evt => handleMenuClick(evt)}
+									aria-label="menu button"
 								>
 									<span />
 									<span />

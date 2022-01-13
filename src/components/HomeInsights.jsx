@@ -27,8 +27,8 @@ export const HomeInsights = () => {
 												</span>
 											))}
 										</div>
-										<a className="link" href="#">
-											<h4 className="title home-insights__item-title">{insight.title}</h4>
+										<a className="link home-insights__item-title" href="#">
+											<h4 className="title">{insight.title}</h4>
 										</a>
 										{insight.text && <p>{insight.text}</p>}
 									</div>
@@ -48,6 +48,16 @@ export const HomeInsights = () => {
 						</a>
 					</div>
 				</div>
+				<svg
+					data-svg="decorative"
+					width="379"
+					height="371"
+					viewBox="0 0 379 371"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<ellipse cx="189.5" cy="185.5" rx="189.5" ry="185.5" fill="#17A2FF" />
+				</svg>
 			</div>
 		</section>
 	);

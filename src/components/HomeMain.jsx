@@ -28,7 +28,7 @@ export const HomeMain = () => {
 									and discovering solutions.
 								</p>
 								<div className="home-main__info-apps">
-									<a href="##" className="home-main__info-app google-play-btn">
+									<a href="##" className="link home-main__info-app google-play-btn">
 										<svg
 											width="28"
 											height="32"
@@ -235,7 +235,7 @@ export const HomeMain = () => {
 											/>
 										</svg>
 									</a>
-									<a href="##" className="home-main__info-app app-store-btn">
+									<a href="##" className="link home-main__info-app app-store-btn">
 										<svg
 											width="26"
 											height="32"
