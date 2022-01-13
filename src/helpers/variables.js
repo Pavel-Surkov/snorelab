@@ -174,7 +174,7 @@ export const homeInsights = [
 		}
 	},
 	{
-		flags: ['Solutions, Science, Diet & Lifestyle'],
+		flags: ['Solutions', 'Science', 'Diet & Lifestyle'],
 		title: 'Mouth Exercises for Snoring',
 		background: {
 			'1x': insight_4,
@@ -182,7 +182,7 @@ export const homeInsights = [
 		}
 	},
 	{
-		flags: ['Causes, Science'],
+		flags: ['Causes', 'Science'],
 		title: 'What is Snoring? – An Introduction',
 		background: {
 			'1x': insight_5,

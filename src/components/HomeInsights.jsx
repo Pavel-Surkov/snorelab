@@ -18,24 +18,14 @@ export const HomeInsights = () => {
 									<div className="home-insights__item-content">
 										<div className="home-insights__item-flags">
 											{/* This method adds flag links and adds commas correctly */}
-											{insight.flags.map((flag, index, arr) => {
-												if (index === arr.length - 1) {
-													return (
-														<a className="link" href="#" key={flag}>
-															{flag}
-														</a>
-													);
-												}
-
-												return (
-													<React.Fragment key={flag}>
-														<a className="link" href="#">
-															{flag}
-														</a>
-														<span>, </span>
-													</React.Fragment>
-												);
-											})}
+											{insight.flags.map((flag, i, arr) => (
+												<span key={flag}>
+													<a className="link" href="#">
+														{flag}
+													</a>
+													{i === arr.length - 1 ? '' : ', '}
+												</span>
+											))}
 										</div>
 										<a className="link" href="#">
 											<h4 className="title home-insights__item-title">{insight.title}</h4>
