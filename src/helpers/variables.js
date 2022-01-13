@@ -63,27 +63,19 @@ export const descriptionCards = [
 export const reviews = [
 	{
 		stars: 5,
-		title: 'Saved me',
+		title: 'Snore tastic!',
 		text:
-			'This app may have literally saved my life. My wife and daughter told me for years that I made awful noises in my sleep. I downloaded this app. For the first time I could hear what I sounded like in my sleep. Absolutely horrifying. My CPAP machine is on its way. Thank you.',
-		icon: `${review_3}`,
-		icon_2x: `${review_3_2x}`
-	},
-	{
-		stars: 5,
-		title: 'Inspired me to loose weight',
-		text:
-			'SnoreLab has helped me track my snoring problem and to realize that it was a weight issue and now I have successfully stopped snoring with some weight loss and constant monitoring from SnoreLab.',
+			'This must be one of the best apps out there. Totally brilliant and so simple to use. It’s very odd hearing yourself…and what others hear…but cannot recommend this app enough. A million gold stars!!',
 		icon: `${review_1}`,
 		icon_2x: `${review_1_2x}`
 	},
 	{
 		stars: 5,
-		title: 'Snore tastic!',
+		title: 'Saved me',
 		text:
-			'This must be one of the best apps out there. Totally brilliant and so simple to use. It’s very odd hearing yourself…and what others hear…but cannot recommend this app enough. A million gold stars!!',
-		icon: `${review_2}`,
-		icon_2x: `${review_2_2x}`
+			'This app may have literally saved my life. My wife and daughter told me for years that I made awful noises in my sleep. I downloaded this app. For the first time I could hear what I sounded like in my sleep. Absolutely horrifying. My CPAP machine is on its way. Thank you.',
+		icon: `${review_3}`,
+		icon_2x: `${review_3_2x}`
 	},
 	{
 		stars: 5,
@@ -100,5 +92,13 @@ export const reviews = [
 			'This app may have literally saved my life. My wife and daughter told me for years that I made awful noises in my sleep. I downloaded this app. For the first time I could hear what I sounded like in my sleep. Absolutely horrifying. My CPAP machine is on its way. Thank you.',
 		icon: `${review_3}`,
 		icon_2x: `${review_3_2x}`
+	},
+	{
+		stars: 5,
+		title: 'Inspired me to loose weight',
+		text:
+			'SnoreLab has helped me track my snoring problem and to realize that it was a weight issue and now I have successfully stopped snoring with some weight loss and constant monitoring from SnoreLab.',
+		icon: `${review_2}`,
+		icon_2x: `${review_2_2x}`
 	}
 ];

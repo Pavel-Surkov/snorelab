@@ -10,12 +10,11 @@ const Header = () => {
 		const menuBtn = e.target.closest('#m-menu__button');
 		const menuEl = menuElementRef.current;
 
-		console.log(menuBtn, menuEl);
-
 		if (!menuEl || !menuBtn) {
 			return;
 		}
 
+		document.documentElement.classList.toggle('is-locked');
 		menuBtn.classList.toggle('m-menu__button_close');
 		menuEl.classList.toggle('m-menu_active');
 	};
