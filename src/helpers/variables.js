@@ -14,6 +14,12 @@ import review_2_2x from '../images/icons/review2@2x.png';
 import review_3 from '../images/icons/review3.png';
 import review_3_2x from '../images/icons/review3@2x.png';
 
+// Partner app description icons
+import p_description_1 from '../images/icons/p-description1.svg';
+import p_description_2 from '../images/icons/p-description2.svg';
+import p_description_3 from '../images/icons/p-description3.svg';
+import p_description_4 from '../images/icons/p-description4.svg';
+
 export const navigationLinks = [
 	{ text: 'How SnoreLab Works', link: 'howworks.html' },
 	{ text: 'Insights', link: '##' },
@@ -57,6 +63,30 @@ export const descriptionCards = [
 		title: 'Doctor Recommended',
 		text:
 			'Many doctors, dentists and sleep professionals encourage their patients to use SnoreLab to assist their consultations and to measure the success of treatments.'
+	}
+];
+
+export const partnerDescriptionCards = [
+	{
+		icon: `${p_description_4}`,
+		title: 'Work into your daily routine',
+		text: 'SnoreGym’s quick 5, 10 or 15 minute workouts can be easily integrated into your daily routine.'
+	},
+	{
+		icon: `${p_description_3}`,
+		title: 'Easy-to-follow animations',
+		text: 'SnoreGym guides you throught each exercise with real-time animations.'
+	},
+	{
+		icon: `${p_description_1}`,
+		title: 'Hits and tips',
+		text: 'Get the most out of your workout with handy tips.'
+	},
+	{
+		icon: `${p_description_2}`,
+		title: 'Proven snoring-reduction technique',
+		text:
+			'Multiple scentific studies have shown that mouth exercises are an effective way to manage snoring and sleep apnea.'
 	}
 ];
 

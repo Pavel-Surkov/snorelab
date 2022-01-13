@@ -40,7 +40,8 @@ html {
 @import 'layout/header', 'layout/footer';
 
 // 6. Components
-@import 'components/m-menu', 'components/home-main', 'components/description', 'components/home-reviews';
+@import 'components/m-menu', 'components/home-main', 'components/description', 'components/home-reviews',
+	'components/home-partner';
 
 // 7. Page-specific styles
 @import 'pages/home';
