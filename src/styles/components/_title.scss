@@ -42,15 +42,22 @@
 				line-height: calc(40 / 30);
 				letter-spacing: 0;
 			}
+		}
+		&_card {
+			font-size: 2rem;
+			line-height: calc(30 / 20);
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.title {
+		&_size {
 			&-s {
 				font-size: 1.8rem;
 				line-height: calc(25 / 18);
 				letter-spacing: 0.01em;
 			}
-		}
-		&_card {
-			font-size: 2rem;
-			line-height: calc(30 / 20);
 		}
 	}
 }

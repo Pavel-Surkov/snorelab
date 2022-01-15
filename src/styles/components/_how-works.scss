@@ -21,3 +21,27 @@
 		}
 	}
 }
+
+@media screen and (max-width: 991px) {
+	.how-works {
+		&-main {
+			&__wrapper {
+				padding: 100px 0;
+				padding-bottom: 81px;
+			}
+			&__info {
+				text-align: left;
+				margin-bottom: 40px;
+				& p {
+					max-width: 550px;
+					margin: 0;
+					font-size: 1.6rem;
+					line-height: calc(20 / 16);
+				}
+			}
+			&__title {
+				margin-bottom: 22px;
+			}
+		}
+	}
+}
