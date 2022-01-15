@@ -12,6 +12,10 @@
 			line-height: calc(50 / 45);
 			letter-spacing: -0.02em;
 		}
+		&-s {
+			font-size: 3rem;
+			line-height: calc(40 / 30);
+		}
 	}
 	&_card {
 		font-size: 2.4rem;
@@ -37,6 +41,11 @@
 				font-size: 3rem;
 				line-height: calc(40 / 30);
 				letter-spacing: 0;
+			}
+			&-s {
+				font-size: 1.8rem;
+				line-height: calc(25 / 18);
+				letter-spacing: 0.01em;
 			}
 		}
 		&_card {

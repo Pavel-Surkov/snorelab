@@ -1,0 +1,131 @@
+.reviews {
+	&-page {
+		&__title {
+			margin-bottom: 30px;
+		}
+		&__wrapper {
+			padding-top: 100px;
+		}
+		&__subtitle {
+			display: block;
+			color: $lightblue-text;
+			font-size: 2.4rem;
+			line-height: calc(40 / 24);
+			margin-bottom: 60px;
+		}
+		&__info {
+			margin-bottom: 90px;
+			& p {
+				margin: 0;
+				font-size: 2.4rem;
+				line-height: calc(40 / 24);
+				& a {
+					color: $lightblue-350;
+					position: relative;
+					&:before {
+						content: '';
+						position: absolute;
+						bottom: 2px;
+						width: 100%;
+						height: 1px;
+						left: 0;
+						background: $lightblue-350;
+					}
+				}
+			}
+		}
+		&__reviews {
+			@include flex(column, flex-start, flex-start, wrap);
+			max-height: 1000px;
+			gap: 10px;
+			&-wrapper {
+				background: image('starry-sky-2.png') no-repeat center;
+				text-align: center;
+				padding-bottom: 125px;
+			}
+			&-title {
+				max-width: 550px;
+				margin-bottom: 50px;
+				font-size: 1.6rem;
+				line-height: calc(20 / 16);
+				letter-spacing: 0.13em;
+				text-transform: uppercase;
+				font-weight: 600;
+				margin-bottom: 50px;
+			}
+		}
+		&__review {
+			padding: 24px 50px;
+			max-width: calc(50% - 5px);
+			background: rgba($white, 0.05);
+			border-radius: 10px;
+			text-align: left;
+			&-top {
+				@include flex();
+				justify-content: space-between;
+				margin-bottom: 16px;
+			}
+			&-title {
+				font-size: 1.8rem;
+				line-height: calc(25 / 18);
+				font-weight: 600;
+				max-width: 345px;
+			}
+			& p {
+				margin: 0;
+				margin-bottom: 55px;
+				font-size: 1.8rem;
+				line-height: calc(25 / 18);
+				color: $gray-500;
+			}
+			&-author {
+				font-size: 1.8rem;
+				line-height: calc(25 / 18);
+				color: $gray-700;
+				font-weight: 600;
+			}
+		}
+		&__note {
+			padding: 85px 0;
+			position: relative;
+			max-width: 920px;
+			text-align: center;
+			margin: 0 auto;
+			& svg:first-child {
+				position: absolute;
+				pointer-events: none;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				filter: blur(130px);
+			}
+			&-wrapper {
+				padding-bottom: 132px;
+			}
+			& p {
+				position: relative;
+				font-size: 2.4rem;
+				line-height: calc(40 / 24);
+				color: $gray-600;
+				margin: 0;
+				margin-bottom: 1em;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				& a {
+					color: $lightblue-350;
+					position: relative;
+					&:before {
+						content: '';
+						position: absolute;
+						bottom: 2px;
+						width: 100%;
+						height: 1px;
+						left: 0;
+						background: $lightblue-350;
+					}
+				}
+			}
+		}
+	}
+}

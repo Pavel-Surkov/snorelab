@@ -102,7 +102,7 @@ export const partnerDescriptionCards = [
 	}
 ];
 
-export const reviews = [
+export const homeReviews = [
 	{
 		stars: 5,
 		title: 'Snore tastic!',
@@ -142,6 +142,57 @@ export const reviews = [
 			'SnoreLab has helped me track my snoring problem and to realize that it was a weight issue and now I have successfully stopped snoring with some weight loss and constant monitoring from SnoreLab.',
 		icon: `${review_2}`,
 		icon_2x: `${review_2_2x}`
+	}
+];
+
+export const reviews = [
+	{
+		stars: 5,
+		title: 'Very informative',
+		text:
+			'Excellent app, it gave me a very good insight into how bad my snoring was. This helped me to reduce my snoring, by applying some of the remedies listed. My wife and I thank you, especially my Wife!',
+		author: 'All ears!'
+	},
+	{
+		stars: 5,
+		title: 'Great app!',
+		text:
+			'This app is wonderful in that not only does it work, but its ease of use. This is a simple, effective tool to better health.',
+		author: 'ApisRegina'
+	},
+	{
+		stars: 5,
+		title: 'Works great!',
+		text: 'Take it from an MD…This program works and is a very useful tool to share with your doctor.',
+		author: 'johncdali'
+	},
+	{
+		stars: 5,
+		title: 'Five stars!',
+		text:
+			'Great app for analyzing your snore patterns. Going to share with my doctor and have encouraged my family and friends to download. Great job!!',
+		author: 'JulieG in NC'
+	},
+	{
+		stars: 5,
+		title: 'You are the last to know how badly you snore!',
+		text:
+			'This is a great app as long as you are prepared to accept and acknowledge you’re a snorer. Prepare to be surprised, shocked and horrified in equal measure — then use the recordings to get professional help or personal motivation to stop the snoring.',
+		author: 'Steve the Snorer'
+	},
+	{
+		stars: 5,
+		title: 'Great informational tool!',
+		text:
+			'I’m really glad I started using this app. For one thing, it made me realize that using a breathing strip while I sleep is extremely effective. I also plan to test out other theories with the help of this app, like taking sinus meds at bedtime. Anything to make me snore less!',
+		author: 'ally1970'
+	},
+	{
+		stars: 5,
+		title: 'Snore tastic!',
+		text:
+			'This must be one of the best apps out there. Totally brilliant and so simple to use. It’s very odd hearing yourself…and what others hear…but cannot recommend this app enough. A million gold stars!!',
+		author: 'Elle Paige'
 	}
 ];
 

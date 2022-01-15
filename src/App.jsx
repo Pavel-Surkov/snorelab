@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { Home, HowWorks } from './pages';
+import { Home, HowWorks, Reviews } from './pages';
 
 const PAGES = {
 	Home,
-	HowWorks
+	HowWorks,
+	Reviews
 };
 
 const renderPageElement = el => {

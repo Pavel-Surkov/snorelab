@@ -41,10 +41,10 @@ html {
 
 // 6. Components
 @import 'components/m-menu', 'components/home-main', 'components/description', 'components/home-reviews',
-	'components/home-partner', 'components/home-insights';
+	'components/home-partner', 'components/home-insights', 'components/how-works';
 
 // 7. Page-specific styles
-@import 'pages/home';
+@import 'pages/home', 'pages/reviews';
 
 // 8. Themes
 @import 'themes/default', 'themes/media';

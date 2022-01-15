@@ -1,9 +1,10 @@
 import React from 'react';
+import { HowWorksMain } from '../components/HowWorksMain';
 
 export const HowWorks = () => {
 	return (
-		<div>
-			<p>HOW SNORELAB WORKS</p>
-		</div>
+		<main className="how-works">
+			<HowWorksMain />
+		</main>
 	);
 };

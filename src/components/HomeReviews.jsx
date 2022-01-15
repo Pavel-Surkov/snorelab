@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { reviews } from '../helpers/variables';
+import { homeReviews } from '../helpers/variables';
 import { calculateSlidesPerView } from '../helpers/functions';
 
 SwiperCore.use([Pagination]);
@@ -38,7 +38,7 @@ export const HomeReviews = React.memo(() => {
 					initialSlide={3}
 					centeredSlides={true}
 				>
-					{reviews.map(review => {
+					{homeReviews.map(review => {
 						const starsCount = review.stars;
 						const starsArr = [];
 
@@ -50,7 +50,7 @@ export const HomeReviews = React.memo(() => {
 							<SwiperSlide key={review.title}>
 								<div className="home-reviews__item">
 									<div className="home-reviews__item-wrapper">
-										<div className="home-reviews__stars">
+										<div className="reviews-stars home-reviews__stars">
 											{starsArr.map(star => (
 												<span className="star-wrapper" key={star}>
 													<svg
