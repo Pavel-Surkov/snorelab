@@ -22,49 +22,56 @@ export const ReviewsPage = () => {
 							</div>
 						</div>
 					</div>
-					<div className="reviews-page__reviews-wrapper">
-						<p className="title title_fade reviews-page__reviews-title">
-							This is a selection of some of our favourites reviews from iTunes and the Play Store:
-						</p>
-						<div className="reviews-page__reviews">
-							{reviews.map(review => {
-								const starsCount = review.stars;
-								const starsArr = [];
+				</div>
+				<div className="reviews-page__stars-bg">
+					<div className="container">
+						<div className="reviews-page__reviews-wrapper">
+							<p className="title title_fade reviews-page__reviews-title">
+								This is a selection of some of&nbsp;our favourites reviews from iTunes and the Play
+								Store
+							</p>
+							<div className="reviews-page__reviews">
+								{reviews.map(review => {
+									const starsCount = review.stars;
+									const starsArr = [];
 
-								for (let i = 0; i < starsCount; i++) {
-									starsArr.push(i);
-								}
+									for (let i = 0; i < starsCount; i++) {
+										starsArr.push(i);
+									}
 
-								return (
-									<div className="reviews-page__review" key={review.title}>
-										<div className="reviews-page__review-top">
-											<h5 className="title reviews-page__review-title">{review.title}</h5>
-											<div className="reviews-stars">
-												{starsArr.map(star => (
-													<span className="star-wrapper" key={star}>
-														<svg
-															width="23"
-															height="23"
-															viewBox="0 0 23 23"
-															fill="none"
-															xmlns="http://www.w3.org/2000/svg"
-														>
-															<path
-																d="M11.25 0.899902L14.3717 8.35321L22.4249 9.01895L16.3011 14.2911L18.1565 22.1559L11.25 17.9609L4.34352 22.1559L6.19894 14.2911L0.0750856 9.01895L8.12827 8.35321L11.25 0.899902Z"
-																fill="#FED301"
-															/>
-														</svg>
-													</span>
-												))}
+									return (
+										<div className="reviews-page__review" key={review.title}>
+											<div className="reviews-page__review-top">
+												<h5 className="title reviews-page__review-title">{review.title}</h5>
+												<div className="reviews-stars">
+													{starsArr.map(star => (
+														<span className="star-wrapper" key={star}>
+															<svg
+																width="23"
+																height="23"
+																viewBox="0 0 23 23"
+																fill="none"
+																xmlns="http://www.w3.org/2000/svg"
+															>
+																<path
+																	d="M11.25 0.899902L14.3717 8.35321L22.4249 9.01895L16.3011 14.2911L18.1565 22.1559L11.25 17.9609L4.34352 22.1559L6.19894 14.2911L0.0750856 9.01895L8.12827 8.35321L11.25 0.899902Z"
+																	fill="#FED301"
+																/>
+															</svg>
+														</span>
+													))}
+												</div>
 											</div>
+											<p>{review.text}</p>
+											<span className="reviews-page__review-author">{`by ${review.author}`}</span>
 										</div>
-										<p>{review.text}</p>
-										<span className="reviews-page__review-author">{`by ${review.author}`}</span>
-									</div>
-								);
-							})}
+									);
+								})}
+							</div>
 						</div>
 					</div>
+				</div>
+				<div className="container">
 					<div className="reviews-page__note-wrapper">
 						<div className="reviews-page__note">
 							<svg

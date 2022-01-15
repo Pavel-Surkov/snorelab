@@ -54,3 +54,11 @@
 		}
 	}
 }
+
+@media screen and (max-width: 576px) {
+	.title {
+		&_fade {
+			display: block;
+		}
+	}
+}
