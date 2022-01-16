@@ -20,14 +20,16 @@ export const HowWorksMain = () => {
 					</div>
 					<div className="examples">
 						<div className="example example-dashboard">
-							<h3 className="title title_size-s example-title">
-								Anti-snoring remedies and&nbsp;techniques
-							</h3>
-							<p>
-								By measuring nightly changes in your snoring intensity with SnoreLab, you can try
-								different anti-snoring remedies and&nbsp;techniques and hopefully discover one which
-								really works.
-							</p>
+							<div className="example__text">
+								<h3 className="title title_size-s example-title">
+									Anti-snoring remedies and&nbsp;techniques
+								</h3>
+								<p>
+									By measuring nightly changes in your snoring intensity with SnoreLab, you can try
+									different anti-snoring remedies and&nbsp;techniques and hopefully discover one which
+									really works.
+								</p>
+							</div>
 							<div className="example-img how-works-main__example-img">
 								<div className="example-blur">
 									<svg
@@ -47,12 +49,14 @@ export const HowWorksMain = () => {
 							</div>
 						</div>
 						<div className="example example-audio">
-							<h3 className="title title_size-s example-title">What you sound like</h3>
-							<p>
-								Crucially, SnoreLab also allows you to hear what you sound like so&nbsp;you don’t just
-								have to take your partner’s word for it! We find this can be a dramatic revelation which
-								spurs you to take action.
-							</p>
+							<div className="example__text">
+								<h3 className="title title_size-s example-title">What you sound like</h3>
+								<p>
+									Crucially, SnoreLab also allows you to hear what you sound like so&nbsp;you don’t
+									just have to take your partner’s word for it! We find this can be a dramatic
+									revelation which spurs you to take action.
+								</p>
+							</div>
 							<div className="example-img how-works-main__example-img">
 								<div className="example-blur">
 									<svg
