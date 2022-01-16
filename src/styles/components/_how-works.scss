@@ -60,6 +60,25 @@
 			padding-bottom: 95px;
 		}
 	}
+	&-start {
+		&__wrapper {
+			padding: 120px 0;
+			padding-bottom: 95px;
+			position: relative;
+			& svg:first-child {
+				pointer-events: none;
+				position: absolute;
+				right: -80px;
+				top: 40px;
+				transform: translateY(-50%);
+				filter: blur(140px);
+			}
+		}
+		&__info {
+			text-align: center;
+			margin-bottom: 100px;
+		}
+	}
 }
 
 @media screen and (max-width: 991px) {
@@ -104,6 +123,17 @@
 			}
 			&__title {
 				margin-bottom: 15px;
+			}
+		}
+		&-start {
+			&__wrapper {
+				padding: 50px 0;
+				& svg:first-child[data-svg='decorative'] {
+					display: none;
+				}
+			}
+			&__info {
+				margin-bottom: 40px;
 			}
 		}
 	}
