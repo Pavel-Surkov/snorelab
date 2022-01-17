@@ -84,6 +84,20 @@ export const HowWorksSleep = () => {
 						</div>
 					</div>
 				</div>
+				<svg
+					data-svg="decorative"
+					width="503"
+					height="878"
+					viewBox="0 0 503 878"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M462 0L570.889 335.127H923.262L638.187 542.246L747.076 877.373L462 670.254L176.924 877.373L285.813 542.246L0.737579 335.127H353.111L462 0Z"
+						fill="#17A2FF"
+						fillOpacity="0.4"
+					/>
+				</svg>
 			</div>
 		</section>
 	);
