@@ -5,6 +5,7 @@ import { HowWorksMake } from '../components/HowWorksMake';
 import { HowWorksStart } from '../components/HowWorksStart';
 import { HowWorksSleep } from '../components/HowWorksSleep';
 import { HowWorksSee } from '../components/HowWorksSee';
+import { HowWorksNotes } from '../components/HowWorksNotes';
 
 export const HowWorks = () => {
 	return (
@@ -15,6 +16,7 @@ export const HowWorks = () => {
 			<HowWorksStart />
 			<HowWorksSleep />
 			<HowWorksSee />
+			<HowWorksNotes />
 		</main>
 	);
 };

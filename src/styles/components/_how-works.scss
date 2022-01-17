@@ -110,6 +110,19 @@
 			margin-bottom: 25px;
 		}
 	}
+	&-notes {
+		&__wrapper {
+			padding: 120px 0;
+			padding-bottom: 95px;
+		}
+		&__info {
+			text-align: center;
+			margin-bottom: 100px;
+		}
+		&__title {
+			margin-bottom: 25px;
+		}
+	}
 }
 
 @media screen and (max-width: 991px) {
@@ -182,6 +195,15 @@
 			}
 			&__title {
 				margin-bottom: 15px;
+			}
+			&__info {
+				margin-bottom: 40px;
+			}
+		}
+		&-notes {
+			&__wrapper {
+				padding: 50px 0;
+				padding-bottom: 60px;
 			}
 			&__info {
 				margin-bottom: 40px;
