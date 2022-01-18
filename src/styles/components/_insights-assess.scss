@@ -1,0 +1,52 @@
+.insights-assess {
+	&__wrapper {
+		padding: 90px 0;
+		padding-bottom: 180px;
+	}
+	&__content {
+		text-align: center;
+		position: relative;
+		& svg:first-child {
+			position: absolute;
+			left: 50%;
+			top: -40px;
+			transform: translateX(-50%);
+			filter: blur(130px);
+			pointer-events: none;
+		}
+	}
+	&__title {
+		margin-bottom: 100px;
+		position: relative;
+		z-index: 1;
+	}
+	&__articles {
+		@include flex(row, flex-start, center);
+		gap: 30px;
+		position: relative;
+	}
+	&__article {
+		max-width: 390px;
+		text-align: left;
+		&:hover {
+			& .title {
+				opacity: 0.8;
+			}
+			& img {
+				transform: scale(1.05);
+			}
+		}
+		&-img {
+			overflow: hidden;
+			margin-bottom: 17px;
+			border-radius: 10px;
+			& img {
+				border-radius: 10px;
+				transition: 0.3s;
+			}
+		}
+		&-title {
+			color: $gray-500;
+		}
+	}
+}
