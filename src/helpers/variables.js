@@ -31,6 +31,16 @@ import insight_4 from '../images/insight4.png';
 import insight_4_2x from '../images/insight4@2x.png';
 import insight_5 from '../images/insight5.png';
 import insight_5_2x from '../images/insight5@2x.png';
+import insight_6 from '../images/insight6.png';
+import insight_6_2x from '../images/insight6@2x.png';
+import insight_7 from '../images/insight7.png';
+import insight_7_2x from '../images/insight7@2x.png';
+import insight_8 from '../images/insight8.png';
+import insight_8_2x from '../images/insight8@2x.png';
+import insight_9 from '../images/insight9.png';
+import insight_9_2x from '../images/insight9@2x.png';
+import insight_10 from '../images/insight10.png';
+import insight_10_2x from '../images/insight10@2x.png';
 
 export const navigationLinks = [
 	{ text: 'How SnoreLab Works', link: 'howworks.html' },
@@ -238,6 +248,67 @@ export const homeInsights = [
 		background: {
 			'1x': insight_5,
 			'2x': insight_5_2x
+		}
+	}
+];
+
+export const insightArticles = [
+	{
+		flags: ['Causes', 'Science'],
+		title: 'Snoring Due to a Blocked Nose?',
+		text:
+			'Many snorers will notice that they cannot breathe well through their nose and instead have to breathe via their mouths.',
+		background: {
+			'1x': insight_6,
+			'2x': insight_6_2x
+		}
+	},
+	{
+		flags: ['Solutions', 'Causes'],
+		title: 'Snoring with an Open Mouth',
+		text:
+			'Plenty of snorers have weak jaw muscles or excess weight on their chins that pulls the mouth open whilst they sleep.',
+		background: {
+			'1x': insight_7,
+			'2x': insight_7_2x
+		}
+	},
+	{
+		flags: ['Causes', 'Science', 'Diet & Lifestyle'],
+		title: 'Overweight and Snoring: A Vicious Circle',
+		text: 'Being a snorer and being overweight are interchangeably linked.',
+		background: {
+			'1x': insight_8,
+			'2x': insight_8_2x
+		}
+	},
+	{
+		flags: ['Causes'],
+		title: 'Sleeping Position and Snoring',
+		text:
+			'Side sleeping is the best sleep position for snoring. This is because side sleeping reduces the compression of your airways.',
+		background: {
+			'1x': insight_9,
+			'2x': insight_9_2x
+		}
+	},
+	{
+		flags: ['Causes', 'Science'],
+		title: 'How Can SnoreLab Help My Snoring?',
+		text:
+			'By measuring changes in your snoring intensity between nights with SnoreLab, you can try different methods and...',
+		background: {
+			'1x': insight_1,
+			'2x': insight_1_2x
+		}
+	},
+	{
+		flags: ['Solutions', 'Science', 'Diet & Lifestyle'],
+		title: 'Mouth Exercises for Snoring',
+		text: 'We know that getting some exercise can help us lose weight which is a great way to tackle snoring. ',
+		background: {
+			'1x': insight_10,
+			'2x': insight_10_2x
 		}
 	}
 ];
