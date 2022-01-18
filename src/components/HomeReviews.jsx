@@ -71,6 +71,7 @@ export const HomeReviews = React.memo(() => {
 										<p>{review.text}</p>
 										<div className="home-reviews__item-title">
 											<img
+												loading="lazy"
 												src={review.icon}
 												srcSet={`${review.icon} 1x, ${review.icon_2x} 2x`}
 												alt="reviewer"

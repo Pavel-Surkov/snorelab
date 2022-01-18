@@ -31,12 +31,14 @@ export const HowWorksSee = () => {
 							</div>
 							<div className="example-img how-works-main__example-img">
 								<img
+									loading="lazy"
 									className="d-none d-lg-block"
 									src={score}
 									srcSet={`${score} 1x, ${score_2x} 2x`}
 									alt=""
 								/>
 								<img
+									loading="lazy"
 									className="d-lg-none"
 									src={m_score}
 									srcSet={`${m_score} 1x, ${m_score_2x} 2x`}
@@ -60,12 +62,14 @@ export const HowWorksSee = () => {
 							</div>
 							<div className="example-img how-works-main__example-img">
 								<img
+									loading="lazy"
 									className="d-none d-md-block"
 									src={audio}
 									srcSet={`${audio} 1x, ${audio_2x} 2x`}
 									alt=""
 								/>
 								<img
+									loading="lazy"
 									className="d-md-none"
 									src={m_audio}
 									srcSet={`${m_audio} 1x, ${m_audio_2x} 2x`}

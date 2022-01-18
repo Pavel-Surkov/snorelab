@@ -45,7 +45,12 @@ export const HowWorksMain = () => {
 										/>
 									</svg>
 								</div>
-								<img src={dashboard} srcSet={`${dashboard} 1x, ${dashboard_2x} 2x`} alt="" />
+								<img
+									loading="lazy"
+									src={dashboard}
+									srcSet={`${dashboard} 1x, ${dashboard_2x} 2x`}
+									alt=""
+								/>
 							</div>
 						</div>
 						<div className="example example-audio">
@@ -72,7 +77,7 @@ export const HowWorksMain = () => {
 										/>
 									</svg>
 								</div>
-								<img src={audio} srcSet={`${audio} 1x, ${audio_2x} 2x`} alt="" />
+								<img loading="lazy" src={audio} srcSet={`${audio} 1x, ${audio_2x} 2x`} alt="" />
 							</div>
 						</div>
 					</div>

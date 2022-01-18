@@ -57,7 +57,7 @@ export const HomeDescription = () => {
 										</linearGradient>
 									</defs>
 								</svg>
-								<img src={phone_3} srcSet={`${phone_3} 1x, ${phone_3_2x} 2x`} alt="" />
+								<img loading="lazy" src={phone_3} srcSet={`${phone_3} 1x, ${phone_3_2x} 2x`} alt="" />
 							</div>
 						</div>
 						<div className="col-12 col-lg-6">

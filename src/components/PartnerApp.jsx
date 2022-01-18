@@ -60,7 +60,12 @@ export const PartnerApp = () => {
 						<div className="order-lg-1 col-12 col-lg-6">
 							<div className="home-partner__phones">
 								<div className="home-partner__phones-top">
-									<img src={phones_1} srcSet={`${phones_1} 1x, ${phones_1_2x} 2x`} alt="" />
+									<img
+										loading="lazy"
+										src={phones_1}
+										srcSet={`${phones_1} 1x, ${phones_1_2x} 2x`}
+										alt=""
+									/>
 									<svg
 										width="925"
 										height="879"

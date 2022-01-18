@@ -38,7 +38,7 @@ export const HowWorksNotes = () => {
 										/>
 									</svg>
 								</div>
-								<img src={mockup} srcSet={`${mockup} 1x, ${mockup_2x} 2x`} alt="" />
+								<img loading="lazy" src={mockup} srcSet={`${mockup} 1x, ${mockup_2x} 2x`} alt="" />
 							</div>
 						</div>
 						<div className="example example-trends">
@@ -67,7 +67,12 @@ export const HowWorksNotes = () => {
 										/>
 									</svg>
 								</div>
-								<img src={bed_time} srcSet={`${bed_time} 1x, ${bed_time_2x} 2x`} alt="" />
+								<img
+									loading="lazy"
+									src={bed_time}
+									srcSet={`${bed_time} 1x, ${bed_time_2x} 2x`}
+									alt=""
+								/>
 							</div>
 						</div>
 					</div>

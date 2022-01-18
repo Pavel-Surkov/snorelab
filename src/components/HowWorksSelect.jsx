@@ -29,7 +29,7 @@ export const HowWorksSelect = () => {
 								</p>
 							</div>
 							<div className="example-img how-works-main__example-img">
-								<img src={factors} srcSet={`${factors} 1x, ${factors_2x} 2x`} alt="" />
+								<img loading="lazy" src={factors} srcSet={`${factors} 1x, ${factors_2x} 2x`} alt="" />
 							</div>
 						</div>
 						<div className="example example-create">
@@ -44,6 +44,7 @@ export const HowWorksSelect = () => {
 							</div>
 							<div className="example-img how-works-main__example-img">
 								<img
+									loading="lazy"
 									src={createRemedies}
 									srcSet={`${createRemedies} 1x, ${createRemedies_2x} 2x`}
 									alt=""

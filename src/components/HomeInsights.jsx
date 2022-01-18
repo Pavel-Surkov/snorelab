@@ -33,6 +33,7 @@ export const HomeInsights = () => {
 										{insight.text && <p>{insight.text}</p>}
 									</div>
 									<img
+										loading="lazy"
 										src={insight.background['1x']}
 										srcSet={`${insight.background['1x']} 1x, ${insight.background['2x']} 2x`}
 										alt=""
