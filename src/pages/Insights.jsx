@@ -1,10 +1,12 @@
 import React from 'react';
-import { InsightsMain } from '../components/InsightsMain';
+import { InsightsTabs } from '../components/InsightsTabs';
+import { InsightsFeautured } from '../components/InsightsFeautured';
 
 export const Insights = () => {
 	return (
 		<main className="insights">
-			<InsightsMain />
+			<InsightsTabs />
+			<InsightsFeautured />
 		</main>
 	);
 };
