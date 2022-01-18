@@ -34,9 +34,11 @@ export const InsightsArticles = () => {
 													</span>
 												))}
 											</div>
-											<h3 className="title title_size-m insights-articles__item-title">
-												{article.title}
-											</h3>
+											<a href="#">
+												<h3 className="link title title_size-m insights-articles__item-title">
+													{article.title}
+												</h3>
+											</a>
 											<p>{article.text}</p>
 										</div>
 									</div>

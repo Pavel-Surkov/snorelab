@@ -4,7 +4,8 @@
 	display: inline-block;
 	background: linear-gradient(109.67deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 63.17%);
 	&:hover {
-		background: linear-gradient(129.67deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 63.17%);
+		// background: linear-gradient(180.67deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 63.17%);
+		background: rgba($white, 0.15);
 	}
 	&:active {
 		background: linear-gradient(129.67deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 63.17%);
