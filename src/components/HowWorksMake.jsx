@@ -32,7 +32,7 @@ export const HowWorksMake = () => {
 								</p>
 							</div>
 							<div className="example-img how-works-main__example-img">
-								<img src={delay} srcSet={`${delay} 1x, ${delay_2x} 2x`} alt="" />
+								<img loading="lazy" src={delay} srcSet={`${delay} 1x, ${delay_2x} 2x`} alt="" />
 							</div>
 						</div>
 						<div className="example example-soundscape">
@@ -44,7 +44,12 @@ export const HowWorksMake = () => {
 								</p>
 							</div>
 							<div className="example-img how-works-main__example-img">
-								<img src={soundscape} srcSet={`${soundscape} 1x, ${soundscape_2x} 2x`} alt="" />
+								<img
+									loading="lazy"
+									src={soundscape}
+									srcSet={`${soundscape} 1x, ${soundscape_2x} 2x`}
+									alt=""
+								/>
 							</div>
 						</div>
 						<div className="example example-alarm">
@@ -56,7 +61,7 @@ export const HowWorksMake = () => {
 								</p>
 							</div>
 							<div className="example-img how-works-main__example-img">
-								<img src={alarm} srcSet={`${alarm} 1x, ${alarm_2x} 2x`} alt="" />
+								<img loading="lazy" src={alarm} srcSet={`${alarm} 1x, ${alarm_2x} 2x`} alt="" />
 							</div>
 						</div>
 					</div>

@@ -41,10 +41,11 @@ html {
 
 // 6. Components
 @import 'components/m-menu', 'components/home-main', 'components/description', 'components/home-reviews',
-	'components/home-partner', 'components/home-insights', 'components/how-works', 'components/example';
+	'components/home-partner', 'components/home-insights', 'components/how-works', 'components/example',
+	'components/insights-main', 'components/tabs';
 
 // 7. Page-specific styles
-@import 'pages/home', 'pages/reviews';
+@import 'pages/home', 'pages/reviews', 'pages/insights.scss';
 
 // 8. Themes
 @import 'themes/default', 'themes/media';

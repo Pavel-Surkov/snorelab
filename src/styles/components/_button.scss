@@ -2,9 +2,12 @@
 	padding: 1px;
 	border-radius: 10px;
 	display: inline-block;
-	background: linear-gradient(109.67deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 63.17%);
+	background: linear-gradient(109.67deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 63.17%);
 	&:hover {
-		background: linear-gradient(109.67deg, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0) 63.17%);
+		background: linear-gradient(129.67deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 63.17%);
+	}
+	&:active {
+		background: linear-gradient(129.67deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 63.17%);
 	}
 	& div {
 		border-radius: 10px;

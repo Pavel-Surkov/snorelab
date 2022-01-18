@@ -26,6 +26,11 @@
 			&:last-child {
 				margin-right: 0;
 			}
+			&_active {
+				& a {
+					color: rgba($white, 0.3);
+				}
+			}
 		}
 	}
 }

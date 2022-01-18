@@ -255,3 +255,29 @@ export const footerLinks = {
 		{ text: 'Press', link: 'press.html' }
 	]
 };
+
+export const insightTabs = [
+	{ text: 'All' },
+	{ text: 'Causes' },
+	{ text: 'Solutions' },
+	{ text: 'Sleep apnea' },
+	{ text: 'Product reviews' },
+	{ text: 'User stories' },
+	{ text: 'Science' },
+	{ text: 'Diet & Lifestyle' },
+	{ text: 'Using SnoreLab' },
+	{ text: 'Sleep' }
+];
+
+export const m_insightTabs = [
+	{ text: 'All' },
+	{ text: 'Sleep' },
+	{ text: 'Causes' },
+	{ text: 'Product reviews' },
+	{ text: 'Science' },
+	{ text: 'Diet & Lifestyle' },
+	{ text: 'User stories' },
+	{ text: 'Sleep apnea' },
+	{ text: 'Solutions' },
+	{ text: 'Using SnoreLab' }
+];
