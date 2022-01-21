@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { Home, HowWorks, Reviews, Insights } from './pages';
+import { Home, HowWorks, Reviews, Insights, Insight } from './pages';
 
 const PAGES = {
 	Home,
 	HowWorks,
 	Reviews,
-	Insights
+	Insights,
+	Insight
 };
 
 const renderPageElement = el => {

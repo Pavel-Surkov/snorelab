@@ -26,8 +26,11 @@ export const InsightsFeautured = () => {
 										</a>
 									</span>
 								</div>
+
 								<h3 className="title title_size-m insights-feautured__content-title">
-									Introducing Our New App — SnoreGym
+									<a href="insight.html" className="link">
+										Introducing Our New App — SnoreGym
+									</a>
 								</h3>
 								<p>
 									From the makers of&nbsp;SnoreLab, SnoreGym is&nbsp;the exercise
