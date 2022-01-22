@@ -1,6 +1,7 @@
 import React from 'react';
 import { InsightMain } from '../components/InsightMain';
 import { InsightHowUse } from '../components/InsightHowUse';
+import { InsightAdvice } from '../components/InsightAdvice';
 
 export const Insight = () => {
 	return (
@@ -8,6 +9,7 @@ export const Insight = () => {
 			<div className="insight-wrapper">
 				<InsightMain />
 				<InsightHowUse />
+				<InsightAdvice />
 			</div>
 		</main>
 	);

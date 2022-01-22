@@ -9,8 +9,14 @@ export const InsightSection = props => {
 		}
 	}, []);
 
+	let sectionClassName = 'insight-section';
+
+	if (props.className) {
+		sectionClassName = `insight-section ${props.className}`;
+	}
+
 	return (
-		<section className="insight-section">
+		<section className={sectionClassName}>
 			<div className="insight-section__wrapper">
 				<div className="container">
 					<h2

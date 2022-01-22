@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import './helpers/events';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { Home, HowWorks, Reviews, Insights, Insight } from './pages';
