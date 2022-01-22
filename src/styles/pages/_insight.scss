@@ -1,6 +1,6 @@
 .insight {
 	&-wrapper {
-		max-width: 890px;
+		max-width: 900px;
 		margin: 0 auto;
 	}
 	&-text {
@@ -15,12 +15,74 @@
 			&:last-child {
 				margin-bottom: 0;
 			}
+			& a {
+				color: $lightblue-350;
+				position: relative;
+				&::before {
+					content: '';
+					position: absolute;
+					bottom: 3px;
+					left: 0;
+					width: 100%;
+					height: 1px;
+					background: $lightblue-350;
+				}
+			}
 		}
 	}
 	&-img {
 		margin-bottom: 100px;
 		& img {
 			border-radius: 15px;
+		}
+	}
+	&-note {
+		margin-bottom: 100px;
+		padding: 45px 60px;
+		background: rgba($white, 0.05);
+		border-radius: 15px;
+		text-align: center;
+		& p {
+			color: $gray-500;
+			margin: 0;
+			font-size: 4rem;
+			line-height: calc(50 / 40);
+			text-align: center;
+		}
+		&__link {
+			display: inline-block;
+			position: relative;
+			font-size: 2.4rem;
+			line-height: calc(30 / 24);
+			color: $lightblue-350;
+			margin-top: 15px;
+			letter-spacing: -0.02em;
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: 3px;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background: $lightblue-350;
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				right: -35px;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 30px;
+				height: 30px;
+				background: icon('link.svg') no-repeat 50%;
+			}
+		}
+		&__promocode-btn {
+			margin-top: 15px;
+			& div {
+				font-weight: 400;
+				background: linear-gradient(rgba(255, 255, 255, 0.12)), linear-gradient(#020f1e);
+			}
 		}
 	}
 }
@@ -38,6 +100,23 @@
 		&-img {
 			margin-bottom: 50px;
 		}
+		&-note {
+			padding: 30px 40px;
+			margin-bottom: 50px;
+			& p {
+				font-size: 2rem;
+				line-height: calc(25 / 20);
+			}
+			&__promocode-btn {
+				margin-top: 10px;
+				& div {
+					padding: 0.625em 1.25em;
+					&::after {
+						content: none;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -51,6 +130,13 @@
 		}
 		&-img {
 			margin-bottom: 40px;
+		}
+		&-note {
+			margin-bottom: 40px;
+			& p {
+				font-size: 1.6rem;
+				line-height: calc(20 / 16);
+			}
 		}
 	}
 }

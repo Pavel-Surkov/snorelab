@@ -1,0 +1,17 @@
+.insight-section {
+	&__title {
+		font-size: 4rem;
+		line-height: 1;
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.insight-section {
+		&__title {
+			margin-bottom: 20px;
+			font-size: 2rem;
+			line-height: calc(30 / 20);
+		}
+	}
+}
