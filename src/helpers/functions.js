@@ -15,3 +15,32 @@ export const calculateSlidesPerView = () => {
 		return 1.2;
 	}
 };
+
+export const calculateTextWidth = () => {
+	const imageBlocks = document.querySelectorAll('.insight-img_with-note');
+
+	if (imageBlocks) {
+		imageBlocks.forEach(block => {
+			const blockChildren = Array.from(block.children);
+			const images = blockChildren.filter(el => el.matches('img'));
+
+			let imageWidth;
+
+			if (images[1]) {
+				const firstImageWidth = images[0].clientWidth;
+				const secondImageWidth = images[1].clientWidth;
+
+				imageWidth = firstImageWidth > secondImageWidth ? firstImageWidth : secondImageWidth;
+			}
+
+			// if (window.clientWidth <= 991 && images[1]) {
+			// 	imageWidth = images[1].clientWidth;
+			// } else {
+			// 	imageWidth = images[0].clientWidth;
+			// }
+
+			const textBlocks = blockChildren.filter(el => el.matches('p'));
+			textBlocks.forEach(text => (text.style.width = `${imageWidth}px`));
+		});
+	}
+};
