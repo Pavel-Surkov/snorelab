@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import { InsightMain } from '../components/InsightMain';
 import { InsightHowUse } from '../components/InsightHowUse';
 import { InsightAdvice } from '../components/InsightAdvice';
+import { InsightStudies } from '../components/InsightStudies';
+import { InsightReview } from '../components/InsightReview';
+import { InsightDownload } from '../components/InsightDownload';
 import { calculateTextWidth } from '../helpers/functions';
 
 export const Insight = () => {
@@ -20,6 +23,9 @@ export const Insight = () => {
 				<InsightMain />
 				<InsightHowUse />
 				<InsightAdvice />
+				<InsightStudies />
+				<InsightReview />
+				<InsightDownload />
 			</div>
 		</main>
 	);

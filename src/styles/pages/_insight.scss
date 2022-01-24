@@ -132,6 +132,10 @@
 		}
 		&__list {
 			margin-top: 15px;
+			& + .insight-text__list-title {
+				margin-top: 50px;
+				display: inline-block;
+			}
 			&-title {
 				font-size: 2.8rem;
 				line-height: calc(45 / 28);
@@ -189,6 +193,37 @@
 			}
 		}
 	}
+	&-benefits__list {
+		& .insight-text__list-item {
+			letter-spacing: 0;
+			font-size: 3rem;
+			line-height: calc(45 / 30);
+		}
+	}
+	&-review {
+		&__wrapper {
+			padding: 110px 0;
+			padding-bottom: 67px;
+		}
+		&__note {
+			margin-top: 30px;
+			& p {
+				margin: 0;
+				font-size: 4rem;
+				line-height: calc(50 / 40);
+				color: $lightblue-text;
+			}
+		}
+		&__btns {
+			margin-top: 30px;
+		}
+		&__btn {
+			margin-right: 10px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 991px) {
@@ -204,6 +239,11 @@
 			&__list-item {
 				font-size: 1.6rem;
 				line-height: calc(25 / 16);
+			}
+			&__list {
+				& + .insight-text__list-title {
+					margin-top: 20px;
+				}
 			}
 		}
 		&-img {
@@ -241,6 +281,24 @@
 				background-size: 19px 19px;
 			}
 		}
+		&-benefits__list {
+			& .insight-text__list-item {
+				font-size: 1.6rem;
+				line-height: calc(25 / 16);
+			}
+		}
+		&-review {
+			&__wrapper {
+				text-align-last: center;
+				padding: 50px 0;
+			}
+			&__note {
+				margin-top: 20px;
+			}
+			&__btns {
+				margin-top: 40px;
+			}
+		}
 	}
 }
 
@@ -268,6 +326,11 @@
 				font-size: 1.6rem;
 				line-height: calc(20 / 16);
 			}
+			&_left-stick {
+				border-left: 2px solid $lightblue-text;
+				padding: 20px 18px;
+				padding-right: 15px;
+			}
 		}
 		&-text {
 			margin-bottom: 40px;
@@ -276,6 +339,31 @@
 				font-size: 1.6rem;
 				line-height: calc(25 / 16);
 				letter-spacing: 0;
+			}
+		}
+		&-review {
+			&__note {
+				margin-top: 20px;
+				& p {
+					font-size: 2.4rem;
+					line-height: calc(40 / 24);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.insight {
+		&-review {
+			&__title {
+				max-width: 283px;
+			}
+			&__note {
+				& p {
+					font-size: 1.6rem;
+					line-height: calc(20 / 16);
+				}
 			}
 		}
 	}
