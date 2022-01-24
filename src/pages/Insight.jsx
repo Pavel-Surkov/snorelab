@@ -5,6 +5,7 @@ import { InsightAdvice } from '../components/InsightAdvice';
 import { InsightStudies } from '../components/InsightStudies';
 import { InsightReview } from '../components/InsightReview';
 import { InsightDownload } from '../components/InsightDownload';
+import { References } from '../components/References';
 import { calculateTextWidth } from '../helpers/functions';
 
 export const Insight = () => {
@@ -26,6 +27,7 @@ export const Insight = () => {
 				<InsightStudies />
 				<InsightReview />
 				<InsightDownload />
+				<References />
 			</div>
 		</main>
 	);

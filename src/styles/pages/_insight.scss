@@ -119,6 +119,7 @@
 			& a {
 				color: $lightblue-350;
 				position: relative;
+				display: inline-block;
 				&::before {
 					content: '';
 					position: absolute;
@@ -163,6 +164,7 @@
 				& a {
 					color: $lightblue-350;
 					position: relative;
+					display: inline-block;
 					&::before {
 						content: '';
 						position: absolute;
