@@ -42,6 +42,14 @@ import insight_9_2x from '../images/insight9@2x.png';
 import insight_10 from '../images/insight10.png';
 import insight_10_2x from '../images/insight10@2x.png';
 
+// Imports colorful social icons
+import share_twitter from '../images/icons/Twitter.svg';
+import share_facebook from '../images/icons/Facebook.svg';
+import share_whatsapp from '../images/icons/WhatsApp.svg';
+import share_linkedin from '../images/icons/LinkedIN.svg';
+import share_pinterest from '../images/icons/Pinterest.svg';
+import share_reddit from '../images/icons/Reddit.svg';
+
 export const navigationLinks = [
 	{ text: 'How SnoreLab Works', link: 'howworks.html' },
 	{ text: 'Insights', link: 'insights.html' },
@@ -351,4 +359,13 @@ export const m_insightTabs = [
 	{ text: 'Sleep apnea' },
 	{ text: 'Solutions' },
 	{ text: 'Using SnoreLab' }
+];
+
+export const shareLinks = [
+	{ icon: share_twitter, link: '#1' },
+	{ icon: share_facebook, link: '#2' },
+	{ icon: share_whatsapp, link: '#3' },
+	{ icon: share_linkedin, link: '#4' },
+	{ icon: share_pinterest, link: '#5' },
+	{ icon: share_reddit, link: '#6' }
 ];
