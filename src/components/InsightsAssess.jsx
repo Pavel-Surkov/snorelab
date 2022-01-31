@@ -4,6 +4,7 @@ import stop_bang_2x from '@/images/stop-bang@2x.png';
 import screening from '@/images/screening.png';
 import screening_2x from '@/images/screening@2x.png';
 
+// TODO: Make this component reusable
 export const InsightsAssess = () => {
 	return (
 		<section className="insights-assess">
@@ -27,7 +28,7 @@ export const InsightsAssess = () => {
 							Assess your sleep apnea risk
 						</h2>
 						<div className="insights-assess__articles">
-							<a href="#" className="insights-assess__article">
+							<a href="stopbang.html" className="insights-assess__article">
 								<div className="insights-assess__article-img">
 									<img
 										loading="lazy"

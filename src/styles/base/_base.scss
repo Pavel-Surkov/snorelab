@@ -30,7 +30,7 @@ strong {
 	font-weight: bold;
 }
 body {
-	@include font();
+	font-family: $font;
 	font-weight: 400;
 	color: $white;
 	font-size: 1.6rem;
@@ -40,7 +40,7 @@ body {
 	}
 }
 button {
-	@include font();
+	font-family: $font;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;

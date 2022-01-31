@@ -10,6 +10,7 @@
 	flex-wrap: $flex-wrap;
 }
 
-@mixin font() {
-	font-family: $font;
+@mixin font($size, $lineheight) {
+	font-size: $size;
+	line-height: $lineheight;
 }

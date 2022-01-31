@@ -30,7 +30,7 @@ export const Insight = () => {
 				<InsightReview />
 				<InsightDownload />
 				<References />
-				<Share />
+				<Share title="Share this article" />
 				<InsightsRelative />
 			</div>
 		</main>
