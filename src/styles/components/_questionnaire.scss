@@ -59,6 +59,8 @@
 					margin-bottom: 0;
 				}
 				& label {
+					color: $gray-500;
+					display: inline-block;
 					padding-left: 40px;
 					position: relative;
 					&::before {
@@ -67,8 +69,7 @@
 						width: 24px;
 						height: 24px;
 						left: 0;
-						top: 50%;
-						transform: translateY(-50%);
+						top: 2px;
 						border-radius: 50%;
 						background: icon('radio.svg') no-repeat 50% / cover;
 					}
@@ -144,14 +145,26 @@
 			}
 		}
 		&-list {
+			padding-left: 20px;
 			&__item {
 				@include font(2rem, calc(30 / 20));
 				margin-bottom: 40px;
+				padding-left: 10px;
 				&:last-child {
 					margin-bottom: 0;
 				}
 				& p:first-child {
 					@include font(2rem, calc(30 / 20));
+				}
+				&-answer {
+					& label {
+						padding-left: 35px;
+						&::before {
+							width: 20px;
+							height: 20px;
+							top: 5px;
+						}
+					}
 				}
 			}
 		}

@@ -431,3 +431,86 @@ export const stopBangQuestions = [
 		answers: [{ value: 'No', id: 'gender1', name: 'gender' }, { value: 'Yes', id: 'gender2', name: 'gender' }]
 	}
 ];
+
+export const epworthQuestions = [
+	{
+		id: 1,
+		title: 'Sitting reading a book',
+		answers: [
+			{ value: 'Would NEVER doze', id: 'book1', name: 'book' },
+			{ value: 'SLIGHT chance of dozing', id: 'book2', name: 'book' },
+			{ value: 'MODERATE chance of dozing', id: 'book3', name: 'book' },
+			{ value: 'HIGH chance of dozing', id: 'book4', name: 'book' }
+		]
+	},
+	{
+		id: 2,
+		title: 'Watching television',
+		answers: [
+			{ value: 'Would NEVER doze', id: 'television1', name: 'television' },
+			{ value: 'SLIGHT chance of dozing', id: 'television2', name: 'television' },
+			{ value: 'MODERATE chance of dozing', id: 'television3', name: 'television' },
+			{ value: 'HIGH chance of dozing', id: 'television4', name: 'television' }
+		]
+	},
+	{
+		id: 3,
+		title: 'Sitting inactive in a public place (e.g. a meeting)',
+		answers: [
+			{ value: 'Would NEVER doze', id: 'publicplace1', name: 'publicplace' },
+			{ value: 'SLIGHT chance of dozing', id: 'publicplace2', name: 'publicplace' },
+			{ value: 'MODERATE chance of dozing', id: 'publicplace3', name: 'publicplace' },
+			{ value: 'HIGH chance of dozing', id: 'publicplace4', name: 'publicplace' }
+		]
+	},
+	{
+		id: 4,
+		title: 'Lying down to rest in the afternoon',
+		answers: [
+			{ value: 'Would NEVER doze', id: 'lying1', name: 'lying' },
+			{ value: 'SLIGHT chance of dozing', id: 'lying2', name: 'lying' },
+			{ value: 'MODERATE chance of dozing', id: 'lying3', name: 'lying' },
+			{ value: 'HIGH chance of dozing', id: 'lying4', name: 'lying' }
+		]
+	},
+	{
+		id: 5,
+		title: 'Sitting talking to someone',
+		answers: [
+			{ value: 'Would NEVER doze', id: 'talking1', name: 'talking' },
+			{ value: 'SLIGHT chance of dozing', id: 'talking2', name: 'talking' },
+			{ value: 'MODERATE chance of dozing', id: 'talking3', name: 'talking' },
+			{ value: 'HIGH chance of dozing', id: 'talking4', name: 'talking' }
+		]
+	},
+	{
+		id: 6,
+		title: 'Sitting quietly after a lunch without alcohol',
+		answers: [
+			{ value: 'Would NEVER doze', id: 'withoutalcohol1', name: 'withoutalcohol' },
+			{ value: 'SLIGHT chance of dozing', id: 'withoutalcohol2', name: 'withoutalcohol' },
+			{ value: 'MODERATE chance of dozing', id: 'withoutalcohol3', name: 'withoutalcohol' },
+			{ value: 'HIGH chance of dozing', id: 'withoutalcohol4', name: 'withoutalcohol' }
+		]
+	},
+	{
+		id: 7,
+		title: 'In a car, stopped in traffic or at lights',
+		answers: [
+			{ value: 'Would NEVER doze', id: 'traffic1', name: 'traffic' },
+			{ value: 'SLIGHT chance of dozing', id: 'traffic2', name: 'traffic' },
+			{ value: 'MODERATE chance of dozing', id: 'traffic3', name: 'traffic' },
+			{ value: 'HIGH chance of dozing', id: 'traffic4', name: 'traffic' }
+		]
+	},
+	{
+		id: 8,
+		title: 'In a car, as a passenger for an hour',
+		answers: [
+			{ value: 'Would NEVER doze', id: 'passenger1', name: 'passenger' },
+			{ value: 'SLIGHT chance of dozing', id: 'passenger2', name: 'passenger' },
+			{ value: 'MODERATE chance of dozing', id: 'passenger3', name: 'passenger' },
+			{ value: 'HIGH chance of dozing', id: 'passenger4', name: 'passenger' }
+		]
+	}
+];

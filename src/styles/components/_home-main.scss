@@ -87,8 +87,10 @@
 
 @media screen and (max-width: 991px) {
 	.home-main {
+		&__wrapper {
+			background: image('starry-sky-1.png') no-repeat top;
+		}
 		&__info {
-			background: image('starry-sky-1.png') no-repeat center;
 			padding-top: 105px;
 			margin-bottom: 55px;
 			&-icon {

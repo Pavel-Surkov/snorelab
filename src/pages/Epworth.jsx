@@ -1,5 +1,5 @@
 import React from 'react';
-import { StopBangQuestionnaire } from '../components/StopBangQuestionnaire';
+import { EpworthQuestionnaire } from '../components/EpworthQuestionnaire';
 import { shareQuestionnaireLinks } from '../helpers/variables';
 import { Share } from '../components/Share';
 import { InsightsAssess } from '../components/InsightsAssess';
@@ -22,10 +22,10 @@ const questionnaireArticles = [
 	}
 ];
 
-export const StopBang = () => {
+export const Epworth = () => {
 	return (
-		<main className="stop-bang">
-			<StopBangQuestionnaire />
+		<main className="epworth">
+			<EpworthQuestionnaire />
 			<Share title="Share" links={shareQuestionnaireLinks} />
 			<InsightsAssess
 				light={false}
