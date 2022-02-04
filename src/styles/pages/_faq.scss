@@ -1,0 +1,23 @@
+.faq {
+	&-page {
+		&__wrapper {
+			padding: 100px 0;
+			padding-bottom: 190px;
+			text-align: center;
+		}
+		&__title {
+			margin-bottom: 40px;
+		}
+		&__subtitle {
+			display: block;
+			color: $lightblue-text;
+			@include font(2.4rem, calc(40 / 24));
+		}
+		&__block {
+			padding-top: 125px;
+			max-width: 890px;
+			margin: 0 auto;
+			text-align: left;
+		}
+	}
+}

@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import './helpers/events';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { Home, HowWorks, Reviews, Insights, Insight, StopBang, Epworth } from './pages';
+import { Home, HowWorks, Reviews, Insights, Insight, StopBang, Epworth, Faq } from './pages';
 
 const PAGES = {
 	Home,
@@ -13,7 +13,8 @@ const PAGES = {
 	Insights,
 	Insight,
 	StopBang,
-	Epworth
+	Epworth,
+	Faq
 };
 
 const renderPageElement = el => {
