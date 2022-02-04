@@ -1,7 +1,6 @@
 .questionnaire {
 	&-wrapper {
-		padding: 105px 0;
-		padding-bottom: 45px;
+		padding-top: 105px;
 		max-width: 1200px;
 		margin: 0 auto;
 	}
@@ -25,17 +24,155 @@
 			& a {
 				color: $lightblue-350;
 				position: relative;
-				display: inline-block;
-				&::before {
-					content: '';
-					position: absolute;
-					bottom: 5px;
-					left: 0;
-					width: 100%;
-					height: 1px;
-					background: $lightblue-350;
+				display: inline;
+				border-bottom: 1px solid $lightblue-350;
+			}
+		}
+	}
+	&-form {
+		padding: 115px 0;
+		padding-bottom: 100px;
+		&__submit-wrapper {
+			margin-top: 90px;
+		}
+	}
+	&-list {
+		padding-left: 30px;
+		&__item {
+			list-style-type: decimal;
+			@include font(3rem, calc(40 / 30));
+			font-weight: 700;
+			padding-left: 12px;
+			margin-bottom: 80px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			& p:first-child {
+				margin: 0;
+				@include font(3rem, calc(40 / 30));
+				font-weight: 700;
+				margin-bottom: 25px;
+			}
+			&-answer {
+				margin-bottom: 15px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				& label {
+					padding-left: 40px;
+					position: relative;
+					&::before {
+						position: absolute;
+						content: '';
+						width: 24px;
+						height: 24px;
+						left: 0;
+						top: 50%;
+						transform: translateY(-50%);
+						border-radius: 50%;
+						background: icon('radio.svg') no-repeat 50% / cover;
+					}
+				}
+				& input:checked + label {
+					&::before {
+						background: icon('radio-checked.svg') no-repeat 50% / cover;
+					}
 				}
 			}
+		}
+	}
+	&-change {
+		&__prev {
+			margin-right: 30px;
+			& div {
+				padding: 0.4167em 0.625em;
+				padding-left: 1.833em;
+				font-weight: 400;
+				&::after {
+					right: auto;
+					left: 15px;
+					top: 50%;
+					transform: translateY(-50%) rotate(180deg);
+				}
+			}
+		}
+		&__next {
+			& div {
+				padding: 0.4167em 0.625em;
+				padding-right: 1.833em;
+				font-weight: 400;
+				&::after {
+					right: 15px;
+					top: 50%;
+					transform: translateY(-50%);
+					background: icon('right-gray.svg');
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1219px) {
+	.questionnaire {
+		& .container {
+			max-width: 970px;
+			margin: 0 auto;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.questionnaire {
+		& .container {
+			max-width: 720px;
+		}
+		&-title {
+			margin-bottom: 10px;
+		}
+		&-text {
+			& p {
+				@include font(1.6rem, calc(25 / 16));
+				margin: 0;
+			}
+		}
+		&-form {
+			padding: 40px 0;
+			padding-bottom: 60px;
+			&__submit-wrapper {
+				margin-top: 105px;
+				text-align: center;
+			}
+		}
+		&-list {
+			&__item {
+				@include font(2rem, calc(30 / 20));
+				margin-bottom: 40px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				& p:first-child {
+					@include font(2rem, calc(30 / 20));
+				}
+			}
+		}
+		&-change {
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.questionnaire {
+		& .container {
+			max-width: 576px;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.questionnaire {
+		& .container {
+			max-width: 100%;
 		}
 	}
 }

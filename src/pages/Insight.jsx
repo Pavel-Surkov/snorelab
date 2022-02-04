@@ -6,6 +6,7 @@ import { InsightStudies } from '../components/InsightStudies';
 import { InsightReview } from '../components/InsightReview';
 import { InsightDownload } from '../components/InsightDownload';
 import { References } from '../components/References';
+import { shareInsightLinks } from '../helpers/variables';
 import { Share } from '../components/Share';
 import { InsightsRelative } from '../components/InsightsRelative';
 import { calculateTextWidth } from '../helpers/functions';
@@ -30,7 +31,7 @@ export const Insight = () => {
 				<InsightReview />
 				<InsightDownload />
 				<References />
-				<Share title="Share this article" />
+				<Share title="Share this article" links={shareInsightLinks} />
 				<InsightsRelative />
 			</div>
 		</main>

@@ -19,17 +19,9 @@
 			list-style-type: decimal;
 			& a {
 				color: $lightblue-350;
-				display: inline-block;
 				position: relative;
-				&::before {
-					content: '';
-					position: absolute;
-					bottom: 3px;
-					left: 0;
-					width: 100%;
-					height: 1px;
-					background: $lightblue-350;
-				}
+				display: inline;
+				border-bottom: 1px solid $lightblue-350;
 			}
 		}
 	}
@@ -61,7 +53,8 @@
 			&__item {
 				& a {
 					word-break: break-all;
-					text-decoration: underline;
+					display: inline;
+					border-bottom: 1px solid $lightblue-350;
 					&::before {
 						content: none;
 					}

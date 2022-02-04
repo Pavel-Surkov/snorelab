@@ -49,6 +49,8 @@ import share_whatsapp from '../images/icons/WhatsApp.svg';
 import share_linkedin from '../images/icons/LinkedIN.svg';
 import share_pinterest from '../images/icons/Pinterest.svg';
 import share_reddit from '../images/icons/Reddit.svg';
+import share_xing from '../images/icons/Xing.svg';
+import share_mail from '../images/icons/Mail.svg';
 
 export const navigationLinks = [
 	{ text: 'How SnoreLab Works', link: 'howworks.html' },
@@ -361,11 +363,71 @@ export const m_insightTabs = [
 	{ text: 'Using SnoreLab' }
 ];
 
-export const shareLinks = [
+export const shareInsightLinks = [
 	{ icon: share_twitter, link: '#1' },
 	{ icon: share_facebook, link: '#2' },
 	{ icon: share_whatsapp, link: '#3' },
 	{ icon: share_linkedin, link: '#4' },
 	{ icon: share_pinterest, link: '#5' },
 	{ icon: share_reddit, link: '#6' }
+];
+
+export const shareQuestionnaireLinks = [
+	{ icon: share_facebook, link: '#1' },
+	{ icon: share_twitter, link: '#2' },
+	{ icon: share_pinterest, link: '#3' },
+	{ icon: share_linkedin, link: '#4' },
+	{ icon: share_xing, link: '#5' },
+	{ icon: share_mail, link: '#6' }
+];
+
+// Questionnaire questions
+
+export const stopBangQuestions = [
+	{
+		id: 1,
+		title: 'SNORING — Do you snore loudly (loud enough to be heard through a closed door)?',
+		answers: [{ value: 'No', id: 'snoring1', name: 'snoring' }, { value: 'Yes', id: 'snoring2', name: 'snoring' }]
+	},
+	{
+		id: 2,
+		title: 'TIRED — Do you often feel tired and fatigued during the day?',
+		answers: [{ value: 'No', id: 'tired1', name: 'tired' }, { value: 'Yes', id: 'tired2', name: 'tired' }]
+	},
+	{
+		id: 3,
+		title: 'OBSERVED — Has anyone observed you stop breathing and gasp during the night?',
+		answers: [
+			{ value: 'No', id: 'observed1', name: 'observed' },
+			{ value: 'Yes', id: 'observed2', name: 'observed' }
+		]
+	},
+	{
+		id: 4,
+		title: 'PRESSURE — Have you even been treated for high blood pressure?',
+		answers: [
+			{ value: 'No', id: 'pressure1', name: 'pressure' },
+			{ value: 'Yes', id: 'pressure2', name: 'pressure' }
+		]
+	},
+	{
+		id: 5,
+		title: 'BMI — Is your BMI 30 or above?',
+		answers: [{ value: 'No', id: 'bmi1', name: 'bmi' }, { value: 'Yes', id: 'bmi2', name: 'bmi' }]
+	},
+	{
+		id: 6,
+		title: 'AGE — Are you over 50?',
+		answers: [{ value: 'No', id: 'age1', name: 'age' }, { value: 'Yes', id: 'age2', name: 'age' }]
+	},
+	{
+		id: 7,
+		title: 'NECK — If male, is your neck size 17 inches or more? If female, is your neck size 16 inches or more?',
+		answers: [{ value: 'No', id: 'neck1', name: 'neck' }, { value: 'Yes', id: 'neck2', name: 'neck' }]
+	},
+	{
+		id: 8,
+		title: 'GENDER — Are you male?',
+		answers: [{ value: 'No', id: 'gender1', name: 'gender' }, { value: 'Yes', id: 'gender2', name: 'gender' }]
+	}
 ];

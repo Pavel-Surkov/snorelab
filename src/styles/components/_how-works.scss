@@ -192,15 +192,8 @@
 				& a {
 					color: $lightblue-350;
 					position: relative;
-					&::before {
-						content: '';
-						position: absolute;
-						bottom: 2px;
-						width: 100%;
-						height: 1px;
-						left: 0;
-						background: $lightblue-350;
-					}
+					display: inline;
+					border-bottom: 1px solid $lightblue-350;
 				}
 			}
 		}

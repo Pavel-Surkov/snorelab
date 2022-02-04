@@ -56,22 +56,14 @@
 			text-align: left;
 		}
 		&__link {
-			display: inline-block;
 			position: relative;
 			font-size: 2.4rem;
 			line-height: calc(30 / 24);
 			color: $lightblue-350;
 			margin-top: 15px;
 			letter-spacing: -0.02em;
-			&::before {
-				content: '';
-				position: absolute;
-				bottom: 3px;
-				left: 0;
-				width: 100%;
-				height: 1px;
-				background: $lightblue-350;
-			}
+			display: inline;
+			border-bottom: 1px solid $lightblue-350;
 			&::after {
 				content: '';
 				position: absolute;
@@ -119,16 +111,8 @@
 			& a {
 				color: $lightblue-350;
 				position: relative;
-				display: inline-block;
-				&::before {
-					content: '';
-					position: absolute;
-					bottom: 3px;
-					left: 0;
-					width: 100%;
-					height: 1px;
-					background: $lightblue-350;
-				}
+				display: inline;
+				border-bottom: 1px solid $lightblue-350;
 			}
 		}
 		&__list {
@@ -164,16 +148,8 @@
 				& a {
 					color: $lightblue-350;
 					position: relative;
-					display: inline-block;
-					&::before {
-						content: '';
-						position: absolute;
-						bottom: 3px;
-						left: 0;
-						width: 100%;
-						height: 1px;
-						background: $lightblue-350;
-					}
+					display: inline;
+					border-bottom: 1px solid $lightblue-350;
 				}
 			}
 		}

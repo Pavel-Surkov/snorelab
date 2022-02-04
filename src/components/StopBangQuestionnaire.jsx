@@ -1,5 +1,6 @@
 import React from 'react';
 import { Questionnaire } from './Questionnaire';
+import { stopBangQuestions } from '../helpers/variables';
 
 export const StopBangQuestionnaire = () => {
 	return (
@@ -31,7 +32,15 @@ export const StopBangQuestionnaire = () => {
 							</a>.
 						</p>
 					</div>
-					<Questionnaire />
+					<Questionnaire questions={stopBangQuestions} btnTitle="Access the risk" />
+					<div className="questionnaire-change">
+						<button type="button" className="btn btn-arrow questionnaire-change__prev">
+							<div>Prev</div>
+						</button>
+						<button type="button" className="btn btn-arrow btn_gray-text questionnaire-change__next">
+							<div>Next</div>
+						</button>
+					</div>
 				</div>
 			</div>
 		</section>
