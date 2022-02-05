@@ -4,7 +4,20 @@ import ReactDOM from 'react-dom';
 import './helpers/events';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { Home, HowWorks, Reviews, Insights, Insight, StopBang, Epworth, Faq, Contact, About } from './pages';
+import {
+	Home,
+	HowWorks,
+	Reviews,
+	Insights,
+	Insight,
+	StopBang,
+	Epworth,
+	Faq,
+	Contact,
+	About,
+	Privacy,
+	Terms
+} from './pages';
 
 const PAGES = {
 	Home,
@@ -16,7 +29,9 @@ const PAGES = {
 	Faq,
 	Reviews,
 	Contact,
-	About
+	About,
+	Privacy,
+	Terms
 };
 
 const renderPageElement = el => {

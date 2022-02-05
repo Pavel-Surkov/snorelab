@@ -8,3 +8,5 @@ export * from './Epworth';
 export * from './Faq';
 export * from './Contact';
 export * from './About';
+export * from './Privacy';
+export * from './Terms';
