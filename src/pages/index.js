@@ -6,3 +6,4 @@ export * from './Insight';
 export * from './StopBang';
 export * from './Epworth';
 export * from './Faq';
+export * from './Contact';
