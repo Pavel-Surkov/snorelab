@@ -48,7 +48,7 @@ html {
 
 // 7. Page-specific styles
 @import 'pages/home', 'pages/reviews', 'pages/insights.scss', 'pages/insight', 'pages/faq', 'pages/contact',
-	'pages/about';
+	'pages/about', 'pages/text';
 
 // 8. Themes
 @import 'themes/default', 'themes/media';
