@@ -21,3 +21,24 @@
 		}
 	}
 }
+
+@media screen and (max-width: 991px) {
+	.faq {
+		&-page {
+			&__wrapper {
+				text-align: left;
+				padding-bottom: 60px;
+			}
+			&__title {
+				display: block;
+				margin-bottom: 22px;
+			}
+			&__subtitle {
+				@include font(1.6rem, calc(20 / 16));
+			}
+			&__block {
+				padding-top: 60px;
+			}
+		}
+	}
+}

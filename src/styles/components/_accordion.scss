@@ -9,7 +9,6 @@
 	&-list {
 		&__item {
 			margin-bottom: 25px;
-			border-bottom: 1px solid $blue-350;
 			&:last-child {
 				margin-bottom: 0;
 			}
@@ -24,6 +23,7 @@
 		width: 100%;
 		text-align: left;
 		position: relative;
+		border-bottom: 1px solid $blue-350;
 		&::after {
 			content: '';
 			position: absolute;
@@ -37,12 +37,14 @@
 		}
 		&_open {
 			margin-bottom: 20px;
+			border: none;
 			&::after {
 				transform: rotate(-90deg);
 			}
 			& + .accordion-content {
 				display: block;
 				padding-bottom: 50px;
+				border-bottom: 1px solid $blue-350;
 			}
 		}
 	}
@@ -95,6 +97,75 @@
 			border-radius: 15px;
 			&:last-child {
 				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.accordion {
+		margin-top: 50px;
+		&:first-child {
+			margin-top: 0;
+		}
+		&-title {
+			margin-bottom: 30px;
+		}
+		&-btn {
+			@include font(2rem, calc(30 / 20));
+			color: $white;
+			&::after {
+				width: 20px;
+				height: 20px;
+				top: 9px;
+			}
+			&_open {
+				padding-bottom: 20px;
+				margin-bottom: 0;
+				& + .accordion-content {
+					border: none;
+					padding-bottom: 5px;
+				}
+			}
+		}
+		&-content {
+			& p {
+				@include font(1.6rem, calc(25 / 16));
+				margin-bottom: 0;
+			}
+			& img {
+				border-radius: 10px;
+				margin: 20px 0;
+				&:first-child {
+					margin-top: 0;
+				}
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+			& .accordion-content {
+				&__list {
+					margin: 5px 0;
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+				&__item {
+					@include font(1.6rem, calc(25 / 16));
+					letter-spacing: 0;
+					padding-left: 18px;
+					position: relative;
+					&::before {
+						content: '';
+						font-size: inherit;
+						position: absolute;
+						left: 2px;
+						top: 7px;
+						width: 8px;
+						height: 8px;
+						background: icon('list-item-ellipse.svg') no-repeat 50% / cover;
+					}
+				}
 			}
 		}
 	}

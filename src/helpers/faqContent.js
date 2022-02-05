@@ -27,7 +27,7 @@ const aboutSnoringFaqs = {
 		{
 			btnTitle: 'What is snoring?',
 			content: `
-				<img src="${whatIsSnoring}" srcset="${whatIsSnoring} 1x, ${whatIsSnoring_2x} 2x" alt="" />
+				<img loading="lazy" src="${whatIsSnoring}" srcset="${whatIsSnoring} 1x, ${whatIsSnoring_2x} 2x" alt="" />
 				<p>
 					<a href="#" class="link">Snoring is noisy breathing whilst you sleep</a>. A narrowed or obstructed airway disturbs airflow which causes audible vibrations in soft tissue at the back of your mouth, throat and/or the base of the tongue. A congested nose can also create whistling or popping sounds.
 				</p>
@@ -90,12 +90,12 @@ const understandingResultsFaqs = {
 };
 
 const audioRecordingsFaqs = {
-	title: 'How to use the app',
+	title: 'Audio recordings',
 	elements: [
 		{
 			btnTitle: 'How can I listen to the audio recordings?',
 			content: `
-			<img src="${audioRecordings}" srcset="${audioRecordings} 1x, ${audioRecordings_2x} 2x" alt=""/>
+			<img loading="lazy" src="${audioRecordings}" srcset="${audioRecordings} 1x, ${audioRecordings_2x} 2x" alt=""/>
 			<p>To listen to the recordings simply tap the chart on the results page at the position you wish to hear. Once a recording is playing, you can scroll through the recordings either by dragging the blue spot on the chart or by using the navigation controls in the audio player.</p>
 		`
 		},
