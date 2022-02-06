@@ -16,7 +16,8 @@ import {
 	Contact,
 	About,
 	Privacy,
-	Terms
+	Terms,
+	Careers
 } from './pages';
 
 const PAGES = {
@@ -31,7 +32,8 @@ const PAGES = {
 	Contact,
 	About,
 	Privacy,
-	Terms
+	Terms,
+	Careers
 };
 
 const renderPageElement = el => {

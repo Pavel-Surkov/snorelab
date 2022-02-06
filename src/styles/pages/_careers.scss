@@ -1,0 +1,109 @@
+.careers {
+	&-page {
+		&__wrapper {
+			padding: 100px 0;
+			padding-bottom: 147px;
+		}
+		&__title {
+			margin-bottom: 30px;
+		}
+		&__subtitle {
+			max-width: 890px;
+			margin-bottom: 55px;
+			& p {
+				@include font(2.8rem, calc(45 / 28));
+				letter-spacing: -0.02em;
+				color: $lightblue-text;
+				margin: 0;
+			}
+		}
+		&__info {
+			max-width: 890px;
+			& p {
+				margin: 0;
+				@include font(2.8rem, calc(45 / 28));
+				letter-spacing: -0.02em;
+				color: $gray-700;
+			}
+		}
+		&__jobs {
+			&-title {
+				display: block;
+				margin-bottom: 20px;
+				@include font(2.8rem, calc(45 / 28));
+				letter-spacing: -0.02em;
+				color: $gray-700;
+			}
+			&-item {
+				@include font(3.5rem, calc(45 / 35));
+				font-weight: 700;
+				color: $gray-500;
+				padding-left: 31px;
+				position: relative;
+				margin-bottom: 10px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				&::before {
+					content: '';
+					font-size: inherit;
+					position: absolute;
+					left: 0;
+					top: 4px;
+					width: 26px;
+					height: 1em;
+					background: icon('list-item-ellipse.svg') no-repeat 50%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.careers {
+		&-page {
+			&__wrapper {
+				padding-bottom: 60px;
+			}
+			&__title {
+				margin-bottom: 22px;
+			}
+			&__subtitle {
+				margin-bottom: 40px;
+				& p {
+					@include font(1.6rem, calc(20 / 16));
+					letter-spacing: 0;
+				}
+			}
+			&__info {
+				& p {
+					@include font(1.6rem, calc(25 / 16));
+					letter-spacing: 0;
+				}
+			}
+			&__jobs {
+				&-title {
+					margin-bottom: 30px;
+					@include font(1.6rem, calc(25 / 16));
+					letter-spacing: 0;
+				}
+				&-item {
+					@include font(1.8rem, calc(25 / 18));
+					letter-spacing: 0.01em;
+					padding-left: 19px;
+					color: $white;
+					&::before {
+						content: '';
+						font-size: inherit;
+						position: absolute;
+						left: 0;
+						top: 7px;
+						width: 8px;
+						height: 8px;
+						background: icon('list-item-ellipse.svg') no-repeat 50% / cover;
+					}
+				}
+			}
+		}
+	}
+}

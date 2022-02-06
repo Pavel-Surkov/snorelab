@@ -10,3 +10,4 @@ export * from './Contact';
 export * from './About';
 export * from './Privacy';
 export * from './Terms';
+export * from './Careers';
