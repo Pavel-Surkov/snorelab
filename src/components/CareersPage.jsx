@@ -3,7 +3,7 @@ import { CareersForm } from './CareersForm';
 
 const currentJobsArr = ['iOS Developer', 'Android Developer'];
 
-export const CareersPage = () => {
+export const CareersPage = React.forwardRef((props, ref) => {
 	return (
 		<section className="careers-page">
 			<div className="careers-page__wrapper">
@@ -26,9 +26,9 @@ export const CareersPage = () => {
 							))}
 						</ul>
 					</div>
-					<CareersForm />
+					<CareersForm ref={ref} />
 				</div>
 			</div>
 		</section>
 	);
-};
+});
