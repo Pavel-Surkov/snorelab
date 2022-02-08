@@ -13,6 +13,7 @@
 		transform: translateX(0);
 	}
 	&__navigation {
+		padding-bottom: 70px;
 		&-list {
 			padding-top: 20px;
 			@include flex(column, center);

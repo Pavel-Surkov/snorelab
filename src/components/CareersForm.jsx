@@ -107,7 +107,10 @@ export const CareersForm = React.forwardRef((props, ref) => {
 			</div>
 			<div className="careers-form__field">
 				<p className="title title_fade careers-form__field-title">Email*</p>
-				<span className="careers-form__input-border">
+				<span
+					className="careers-form__input-border careers-form__input-error"
+					data-error="This field can`t be empty. Please fill in the information."
+				>
 					<input
 						className="careers-form__input"
 						type="email"
@@ -131,7 +134,10 @@ export const CareersForm = React.forwardRef((props, ref) => {
 			</div>
 			<div className="careers-form__field">
 				<p className="title title_fade careers-form__field-title">Attach resume*</p>
-				<span className="careers-form__input-border">
+				<span
+					className="careers-form__input-border careers-form__input-error"
+					data-error="Upload failed. Max size for files is 10 MB."
+				>
 					<input
 						className="careers-form__input"
 						id="uploadResume"

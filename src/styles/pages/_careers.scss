@@ -137,12 +137,14 @@
 			}
 		}
 		&__input {
+			display: block;
 			width: 100%;
 			border-radius: 10px;
 			background: linear-gradient(rgba(255, 255, 255, 0.06)), linear-gradient(#020f1e);
 			@include font(1.8rem, calc(25 / 18));
 			color: $gray-600;
 			padding: 15px 20px;
+			position: relative;
 			&:active,
 			&:focus {
 				background: linear-gradient(rgba(255, 255, 255, 0.1)), linear-gradient(#020f1e);
@@ -156,6 +158,19 @@
 				border-radius: 10px;
 				padding: 1px;
 				background: linear-gradient(109.67deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 63.17%);
+			}
+			&-error {
+				position: relative;
+				margin-bottom: 55px;
+				&::after {
+					top: calc(100% + 5px);
+					left: 0;
+					position: absolute;
+					padding-left: 20px;
+					@include font(1.8rem, calc(25 / 18));
+					color: $red-300;
+					content: attr(data-error);
+				}
 			}
 		}
 		&__textarea {
@@ -315,6 +330,11 @@
 		&-form {
 			&__submit {
 				width: 100%;
+			}
+			&__input {
+				&-error {
+					margin-bottom: 67px;
+				}
 			}
 			&__modal {
 				padding: 46px 20px;
