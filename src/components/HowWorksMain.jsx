@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import dashboard from '../images/Dashboard.png';
 import dashboard_2x from '../images/Dashboard@2x.png';
 import audio from '../images/Audio.png';
