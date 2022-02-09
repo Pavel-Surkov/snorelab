@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import snoregym from '../images/insights-snoregym.png';
 import snoregym_2x from '../images/insights-snoregym@2x.png';
 import insight_1 from '../images/insight-img-1.png';
@@ -25,7 +26,7 @@ export const InsightMain = () => {
 					</div>
 					<div className="insight-main__intro">
 						<a href="#" className="insight-main__intro-play" aria-label="play">
-							<img loading="lazy" src={snoregym} srcSet={`${snoregym} 1x, ${snoregym_2x} 2x`} alt="" />
+							<LazyLoadImage src={snoregym} srcSet={`${snoregym} 1x, ${snoregym_2x} 2x`} alt="" />
 							<svg
 								data-img="play-btn"
 								width="113"

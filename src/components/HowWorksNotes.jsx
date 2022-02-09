@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import mockup from '../images/Mockup.png';
 import mockup_2x from '../images/Mockup@2x.png';
 import bed_time from '../images/Time-to-bed.png';
@@ -38,7 +39,7 @@ export const HowWorksNotes = () => {
 										/>
 									</svg>
 								</div>
-								<img loading="lazy" src={mockup} srcSet={`${mockup} 1x, ${mockup_2x} 2x`} alt="" />
+								<LazyLoadImage src={mockup} srcSet={`${mockup} 1x, ${mockup_2x} 2x`} alt="" />
 							</div>
 						</div>
 						<div className="example example-trends">
@@ -67,12 +68,7 @@ export const HowWorksNotes = () => {
 										/>
 									</svg>
 								</div>
-								<img
-									loading="lazy"
-									src={bed_time}
-									srcSet={`${bed_time} 1x, ${bed_time_2x} 2x`}
-									alt=""
-								/>
+								<LazyLoadImage src={bed_time} srcSet={`${bed_time} 1x, ${bed_time_2x} 2x`} alt="" />
 							</div>
 						</div>
 					</div>

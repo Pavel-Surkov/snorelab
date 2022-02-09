@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import factors from '../images/Factors.png';
 import factors_2x from '../images/Factors@2x.png';
 import createRemedies from '../images/Create-Remedies.png';
@@ -29,7 +30,7 @@ export const HowWorksSelect = () => {
 								</p>
 							</div>
 							<div className="example-img how-works-main__example-img">
-								<img loading="lazy" src={factors} srcSet={`${factors} 1x, ${factors_2x} 2x`} alt="" />
+								<LazyLoadImage src={factors} srcSet={`${factors} 1x, ${factors_2x} 2x`} alt="" />
 							</div>
 						</div>
 						<div className="example example-create">
@@ -43,8 +44,7 @@ export const HowWorksSelect = () => {
 								</p>
 							</div>
 							<div className="example-img how-works-main__example-img">
-								<img
-									loading="lazy"
+								<LazyLoadImage
 									src={createRemedies}
 									srcSet={`${createRemedies} 1x, ${createRemedies_2x} 2x`}
 									alt=""

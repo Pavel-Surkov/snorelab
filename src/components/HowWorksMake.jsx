@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import delay from '../images/Delay.png';
 import delay_2x from '../images/Delay@2x.png';
 import soundscape from '../images/Soundscape.png';
@@ -32,7 +33,7 @@ export const HowWorksMake = () => {
 								</p>
 							</div>
 							<div className="example-img how-works-main__example-img">
-								<img loading="lazy" src={delay} srcSet={`${delay} 1x, ${delay_2x} 2x`} alt="" />
+								<LazyLoadImage src={delay} srcSet={`${delay} 1x, ${delay_2x} 2x`} alt="" />
 							</div>
 						</div>
 						<div className="example example-soundscape">
@@ -44,8 +45,7 @@ export const HowWorksMake = () => {
 								</p>
 							</div>
 							<div className="example-img how-works-main__example-img">
-								<img
-									loading="lazy"
+								<LazyLoadImage
 									src={soundscape}
 									srcSet={`${soundscape} 1x, ${soundscape_2x} 2x`}
 									alt=""
@@ -61,7 +61,7 @@ export const HowWorksMake = () => {
 								</p>
 							</div>
 							<div className="example-img how-works-main__example-img">
-								<img loading="lazy" src={alarm} srcSet={`${alarm} 1x, ${alarm_2x} 2x`} alt="" />
+								<LazyLoadImage src={alarm} srcSet={`${alarm} 1x, ${alarm_2x} 2x`} alt="" />
 							</div>
 						</div>
 					</div>

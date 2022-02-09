@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import record from '../images/Record.png';
 import record_2x from '../images/Record@2x.png';
 import pause from '../images/Pause.png';
@@ -32,7 +33,7 @@ export const HowWorksSleep = () => {
 								</p>
 							</div>
 							<div className="order-0 order-xl-1 example-img how-works-main__example-img">
-								<img src={record} srcSet={`${record} 1x, ${record_2x} 2x`} alt="" />
+								<LazyLoadImage src={record} srcSet={`${record} 1x, ${record_2x} 2x`} alt="" />
 							</div>
 						</div>
 						<div className="order-1 order-lg-0 example example-pause">
@@ -44,20 +45,18 @@ export const HowWorksSleep = () => {
 								</p>
 							</div>
 							<div className="example-img how-works-main__example-img">
-								<img loading="lazy" src={pause} srcSet={`${pause} 1x, ${pause_2x} 2x`} alt="" />
+								<LazyLoadImage src={pause} srcSet={`${pause} 1x, ${pause_2x} 2x`} alt="" />
 							</div>
 						</div>
 						<div className="example example-stop">
 							<div className="example-img how-works-main__example-img">
-								<img
-									loading="lazy"
+								<LazyLoadImage
 									className="d-none d-lg-block"
 									src={slide_btn}
 									srcSet={`${slide_btn} 1x, ${slide_btn_2x} 2x`}
 									alt=""
 								/>
-								<img
-									loading="lazy"
+								<LazyLoadImage
 									className="d-block d-lg-none"
 									src={m_slide_btn}
 									srcSet={`${m_slide_btn} 1x, ${m_slide_btn_2x} 2x`}
@@ -81,7 +80,7 @@ export const HowWorksSleep = () => {
 								</p>
 							</div>
 							<div className="example-img how-works-main__example-img">
-								<img loading="lazy" src={rating} srcSet={`${rating} 1x, ${rating_2x} 2x`} alt="" />
+								<LazyLoadImage src={rating} srcSet={`${rating} 1x, ${rating_2x} 2x`} alt="" />
 							</div>
 						</div>
 					</div>

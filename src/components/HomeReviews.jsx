@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Pagination } from 'swiper';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { homeReviews } from '../helpers/variables';
@@ -70,8 +71,7 @@ export const HomeReviews = React.memo(() => {
 										</div>
 										<p>{review.text}</p>
 										<div className="home-reviews__item-title">
-											<img
-												loading="lazy"
+											<LazyLoadImage
 												src={review.icon}
 												srcSet={`${review.icon} 1x, ${review.icon_2x} 2x`}
 												alt="reviewer"

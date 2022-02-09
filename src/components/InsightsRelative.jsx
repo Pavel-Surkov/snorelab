@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { insightArticles } from '@/helpers/variables';
 
 export const InsightsRelative = () => {
@@ -19,8 +20,7 @@ export const InsightsRelative = () => {
 								return (
 									<div className="insights-assess__article" key={article.title}>
 										<div className="insights-assess__article-img">
-											<img
-												loading="lazy"
+											<LazyLoadImage
 												src={article.background['1x']}
 												srcSet={`${article.background['1x']} 1x, ${article.background[
 													'2x'

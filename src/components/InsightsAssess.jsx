@@ -1,6 +1,6 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-// TODO: Make this component reusable
 export const InsightsAssess = ({ light, titleClass, titleText, articles }) => {
 	return (
 		<section className="insights-assess">
@@ -28,8 +28,7 @@ export const InsightsAssess = ({ light, titleClass, titleText, articles }) => {
 								return (
 									<a href={link} className="insights-assess__article" key={title}>
 										<div className="insights-assess__article-img">
-											<img
-												loading="lazy"
+											<LazyLoadImage
 												src={image['1x']}
 												srcSet={`${image['1x']} 1x, ${image['2x']} 2x`}
 												alt=""

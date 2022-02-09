@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import phones_1 from '../images/phones1.png';
 import phones_1_2x from '../images/phones1@2x.png';
 import { partnerDescriptionCards } from '../helpers/variables';
@@ -60,12 +61,7 @@ export const PartnerApp = () => {
 						<div className="order-lg-1 col-12 col-lg-6">
 							<div className="home-partner__phones">
 								<div className="home-partner__phones-top">
-									<img
-										loading="lazy"
-										src={phones_1}
-										srcSet={`${phones_1} 1x, ${phones_1_2x} 2x`}
-										alt=""
-									/>
+									<LazyLoadImage src={phones_1} srcSet={`${phones_1} 1x, ${phones_1_2x} 2x`} alt="" />
 									<svg
 										width="925"
 										height="879"

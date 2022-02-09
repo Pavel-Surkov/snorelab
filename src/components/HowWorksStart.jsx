@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import start from '../images/Start.png';
 import start_2x from '../images/Start@2x.png';
 import placement from '../images/Placement.png';
@@ -66,8 +67,7 @@ export const HowWorksStart = () => {
 									srcSet={`${start} 1x, ${start_2x} 2x`}
 									alt=""
 								/>
-								<img
-									loading="lazy"
+								<LazyLoadImage
 									className="d-lg-none"
 									src={m_start}
 									srcSet={`${m_start} 1x, ${m_start_2x} 2x`}
@@ -109,12 +109,7 @@ export const HowWorksStart = () => {
 										/>
 									</svg>
 								</div>
-								<img
-									loading="lazy"
-									src={placement}
-									srcSet={`${placement} 1x, ${placement_2x} 2x`}
-									alt=""
-								/>
+								<LazyLoadImage src={placement} srcSet={`${placement} 1x, ${placement_2x} 2x`} alt="" />
 							</div>
 						</div>
 					</div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { homeInsights } from '../helpers/variables';
 
 export const HomeInsights = () => {
@@ -32,8 +33,7 @@ export const HomeInsights = () => {
 										</a>
 										{insight.text && <p>{insight.text}</p>}
 									</div>
-									<img
-										loading="lazy"
+									<LazyLoadImage
 										src={insight.background['1x']}
 										srcSet={`${insight.background['1x']} 1x, ${insight.background['2x']} 2x`}
 										alt=""

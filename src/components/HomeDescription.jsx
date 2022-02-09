@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import phone_3 from '../images/phone3.png';
 import phone_3_2x from '../images/phone3@2x.png';
 import { descriptionCards } from '@/helpers/variables';
@@ -57,7 +58,7 @@ export const HomeDescription = () => {
 										</linearGradient>
 									</defs>
 								</svg>
-								<img loading="lazy" src={phone_3} srcSet={`${phone_3} 1x, ${phone_3_2x} 2x`} alt="" />
+								<LazyLoadImage src={phone_3} srcSet={`${phone_3} 1x, ${phone_3_2x} 2x`} alt="" />
 							</div>
 						</div>
 						<div className="col-12 col-lg-6">

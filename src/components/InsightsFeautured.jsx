@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import snoregym from '../images/insights-snoregym.png';
 import snoregym_2x from '../images/insights-snoregym@2x.png';
 
@@ -10,12 +11,7 @@ export const InsightsFeautured = () => {
 					<h2 className="title title_fade-s insights-feautured__title">Feautured article</h2>
 					<div className="insights-feautured__content">
 						<div className="order-lg-1 insights-feautured__img">
-							<img
-								loading="lazy"
-								src={snoregym}
-								srcSet={`${snoregym} 1x, ${snoregym_2x} 2x`}
-								alt="SnoreGym"
-							/>
+							<LazyLoadImage src={snoregym} srcSet={`${snoregym} 1x, ${snoregym_2x} 2x`} alt="SnoreGym" />
 						</div>
 						<div className="order-lg-0 insights-feautured__content-text">
 							<div className="insights-feautured__content-wrapper">
