@@ -89,20 +89,20 @@ export const ReviewsPage = () => {
 							</svg>
 							<p>
 								If you have found SnoreLab helpful and informative, be sure to leave a review
-								on&nbsp;the&nbsp;{' '}
+								on&nbsp;the{' '}
 								<a href="#" className="link">
-									App Store
+									App&nbsp;Store
 								</a>{' '}
 								or the{' '}
 								<a href="#" className="link">
-									Play Store
+									Play&nbsp;Store
 								</a>. Your reviews, comments and suggestions help us&nbsp;to&nbsp;constantly improve so
 								we can provide the best service possible to help you sleep healthier and quieter!
 							</p>
 							<p>
 								Also check out our{' '}
 								<a href="#" className="link">
-									User Stories
+									User&nbsp;Stories
 								</a>{' '}
 								section for some firsthand accounts of using the&nbsp;app to combat snoring and sleep
 								apnea.

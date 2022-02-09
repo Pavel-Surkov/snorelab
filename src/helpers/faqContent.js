@@ -1,8 +1,8 @@
 import whatIsSnoring from '@/images/what-is-snoring.png';
 import whatIsSnoring_2x from '@/images/what-is-snoring@2x.png';
 
-import audioRecordings from '../images/insight-img-4.png';
-import audioRecordings_2x from '../images/insight-img-4@2x.png';
+import audioRecordings1 from '../images/audioRecordings-1.png';
+import audioRecordings1_2x from '../images/audioRecordings-1@2x.png';
 
 // Faq elements
 const aboutSnorelabFaqs = {
@@ -95,7 +95,7 @@ const audioRecordingsFaqs = {
 		{
 			btnTitle: 'How can I listen to the audio recordings?',
 			content: `
-			<img loading="lazy" src="${audioRecordings}" srcset="${audioRecordings} 1x, ${audioRecordings_2x} 2x" alt=""/>
+			<img loading="lazy" src="${audioRecordings1}" srcset="${audioRecordings1} 1x, ${audioRecordings1_2x} 2x" alt=""/>
 			<p>To listen to the recordings simply tap the chart on the results page at the position you wish to hear. Once a recording is playing, you can scroll through the recordings either by dragging the blue spot on the chart or by using the navigation controls in the audio player.</p>
 		`
 		},

@@ -49,7 +49,7 @@ export const InsightAdvice = () => {
 				<p>Additional notes made on a session will appear in the Sleep Notes</p>
 			</div>
 			<div className="insight-img insight-img_without-border insight-img_with-note insight-img_text-left">
-				<img src={insight_4} srcSet={`${insight_4} 1x, ${insight_4_2x} 2x`} alt="" />
+				<img data-img="desktop" src={insight_4} srcSet={`${insight_4} 1x, ${insight_4_2x} 2x`} alt="" />
 				<img data-img="mobile" src={m_insight_4} srcSet={`${m_insight_4} 1x, ${m_insight_4_2x} 2x`} alt="" />
 				<p>
 					Inconsistent snoring patterns with obvious pauses could indicate risky breathing periods. This was
