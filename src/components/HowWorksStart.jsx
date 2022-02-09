@@ -61,7 +61,6 @@ export const HowWorksStart = () => {
 									</svg>
 								</div>
 								<img
-									loading="lazy"
 									className="d-none d-lg-block"
 									src={start}
 									srcSet={`${start} 1x, ${start_2x} 2x`}
