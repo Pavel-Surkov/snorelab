@@ -44,7 +44,7 @@ export const InsightAdvice = () => {
 				</ul>
 			</div>
 			<div className="insight-img insight-img_without-border insight-img_with-note m-note-hidden">
-				<img src={insight_3} srcSet={`${insight_3} 1x, ${insight_3_2x} 2x`} alt="" />
+				<img data-img="desktop" src={insight_3} srcSet={`${insight_3} 1x, ${insight_3_2x} 2x`} alt="" />
 				<img data-img="mobile" src={m_insight_3} srcSet={`${m_insight_3} 1x, ${m_insight_3_2x} 2x`} alt="" />
 				<p>Additional notes made on a session will appear in the Sleep Notes</p>
 			</div>
