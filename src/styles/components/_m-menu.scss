@@ -4,14 +4,14 @@
 	z-index: 10;
 	width: 100%;
 	height: calc(100vh - 70px);
-	left: 0;
+	right: 100%;
 	bottom: 0;
+	transform: none;
 	transition: 0.4s ease-in-out;
-	transform: translateX(-100%);
 	opacity: 0;
 	overflow: scroll;
 	&_active {
-		transform: translateX(0);
+		transform: translateX(100%);
 		opacity: 1;
 	}
 	&__navigation {

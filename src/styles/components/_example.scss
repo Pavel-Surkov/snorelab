@@ -49,7 +49,8 @@
 			right: 70px;
 		}
 		& .example-img img {
-			min-width: 325px;
+			min-width: 400px;
+			min-height: 660px;
 			right: 0;
 			transform: translateX(-3px);
 		}
@@ -286,6 +287,13 @@
 		&-soundscape {
 			max-width: calc(50% - 5px);
 		}
+		&-soundscape {
+			& .example-img img {
+				min-width: 460px;
+				min-height: auto;
+				transform: translateX(-3px);
+			}
+		}
 		&-alarm {
 			max-width: 100%;
 			width: 100%;
@@ -356,7 +364,6 @@
 			}
 			& .example__text {
 				text-align: center;
-				transform: translateY(-80px);
 				max-width: 320px;
 			}
 		}
@@ -857,8 +864,13 @@
 @media screen and (max-width: 380px) {
 	.example {
 		&-soundscape {
-			& .example-img img {
-				min-width: 310px;
+			max-height: 440px;
+			& .example-img {
+				position: relative;
+				& img {
+					min-width: 310px;
+					bottom: 40px;
+				}
 			}
 		}
 		&-record {
