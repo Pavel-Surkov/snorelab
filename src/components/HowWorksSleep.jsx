@@ -32,7 +32,7 @@ export const HowWorksSleep = () => {
 								</p>
 							</div>
 							<div className="order-0 order-xl-1 example-img how-works-main__example-img">
-								<img loading="lazy" src={record} srcSet={`${record} 1x, ${record_2x} 2x`} alt="" />
+								<img src={record} srcSet={`${record} 1x, ${record_2x} 2x`} alt="" />
 							</div>
 						</div>
 						<div className="order-1 order-lg-0 example example-pause">
