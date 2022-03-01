@@ -3,6 +3,9 @@ import renderPageElement from './App';
 
 document.querySelectorAll('.__react-root').forEach(renderPageElement);
 
+/*if (document.getElementById('snorelab-app')) { //check if element exists before rendering
+  render(<App />, document.getElementById('snorelab-app'));
+}*/
 // // Test import of a JavaScript module
 // import { example } from '@/js/example';
 

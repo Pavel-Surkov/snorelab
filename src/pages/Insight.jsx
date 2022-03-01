@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+//import React, { useEffect } from 'react';
+const { createElement, render } = wp.element;
 import { InsightMain } from '../components/InsightMain';
 import { InsightHowUse } from '../components/InsightHowUse';
 import { InsightAdvice } from '../components/InsightAdvice';

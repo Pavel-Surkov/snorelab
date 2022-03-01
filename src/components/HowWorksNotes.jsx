@@ -1,4 +1,5 @@
-import React from 'react';
+//import React from 'react';
+const { createElement, render } = wp.element;
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import mockup from '../images/Mockup.png';
 import mockup_2x from '../images/Mockup@2x.png';

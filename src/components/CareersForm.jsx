@@ -1,4 +1,5 @@
-import React, { useState, useRef } from 'react';
+//import React, { useState, useRef } from 'react';
+const { createElement, render } = wp.element;
 import paperplane from '../images/form-submit-modal.svg';
 
 export const CareersForm = React.forwardRef((props, ref) => {

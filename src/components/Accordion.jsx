@@ -1,4 +1,5 @@
-import React from 'react';
+//import React from 'react';
+const { createElement, render } = wp.element;
 
 export const Accordion = ({ title, elements }) => {
 	const handleAccordionClick = e => {

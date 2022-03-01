@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
+//import React, { useState, useEffect, useRef } from 'react';
+const { useState, useEffect, useRef, createElement, render } = wp.element;
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Pagination } from 'swiper';
 import { LazyLoadImage } from 'react-lazy-load-image-component';

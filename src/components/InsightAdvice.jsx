@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+//import React, { useEffect, useState } from 'react';
+const { createElement, render, useEffect, useState } = wp.element;
 import { InsightSection } from './InsightSection';
 import insight_3 from '../images/insight-img-3.png';
 import insight_3_2x from '../images/insight-img-3@2x.png';

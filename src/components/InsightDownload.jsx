@@ -1,4 +1,5 @@
-import React from 'react';
+//import React from 'react';
+const { createElement, render } = wp.element;
 import googlePlay from '../images/google-play.svg';
 import appStore from '../images/app-store.svg';
 

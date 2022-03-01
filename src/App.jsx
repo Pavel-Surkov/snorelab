@@ -1,5 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+//import React from 'react';
+//import ReactDOM from 'react-dom';
+const { render } = wp.element;
 
 import './helpers/events';
 import Header from './components/Header';
@@ -17,7 +18,8 @@ import {
 	About,
 	Privacy,
 	Terms,
-	Careers
+	Careers,
+	Books
 } from './pages';
 
 const PAGES = {

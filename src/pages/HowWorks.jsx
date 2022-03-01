@@ -1,4 +1,5 @@
-import React from 'react';
+//import React from 'react';
+const { createElement, render } = wp.element;
 import { HowWorksMain } from '../components/HowWorksMain';
 import { HowWorksSelect } from '../components/HowWorksSelect';
 import { HowWorksMake } from '../components/HowWorksMake';

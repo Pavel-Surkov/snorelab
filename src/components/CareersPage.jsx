@@ -1,4 +1,5 @@
-import React from 'react';
+//import React from 'react';
+const { createElement, render } = wp.element;
 import { CareersForm } from './CareersForm';
 
 const currentJobsArr = ['iOS Developer', 'Android Developer'];

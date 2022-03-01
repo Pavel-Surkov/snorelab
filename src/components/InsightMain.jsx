@@ -1,4 +1,5 @@
-import React from 'react';
+//import React from 'react';
+const { createElement, render } = wp.element;
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import snoregym from '../images/insights-snoregym.png';
 import snoregym_2x from '../images/insights-snoregym@2x.png';
