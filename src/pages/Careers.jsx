@@ -1,5 +1,5 @@
 //import React, { useRef } from 'react';
-const { createElement, render } = wp.element;
+const { createElement, render, useRef } = wp.element;
 import { CareersPage } from '../components/CareersPage';
 
 export const Careers = () => {
