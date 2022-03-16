@@ -1,6 +1,6 @@
-//import React from 'react';
-//import ReactDOM from 'react-dom';
-const { createElement, render } = wp.element;
+import React from 'react';
+import ReactDOM from 'react-dom';
+//const { createElement, render } = wp.element;
 
 import './helpers/events';
 import Header from './components/Header';
@@ -55,7 +55,7 @@ const renderPageElement = el => {
 		</div>
 	);
 
-	/*ReactDOM.*/render(<App {...props} />, el);
+	ReactDOM.render(<App {...props} />, el);
 };
 
 export default renderPageElement;

@@ -1,5 +1,5 @@
-//import React, { useState, useEffect, useRef } from 'react';
-const { createElement, render, useState, useEffect, useRef } = wp.element;
+import React, { useState, useEffect, useRef } from 'react';
+//const { createElement, render, useState, useEffect, useRef } = wp.element;
 import { insightTabs, m_insightTabs } from '../helpers/variables';
 
 export const InsightsTabs = () => {

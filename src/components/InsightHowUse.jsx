@@ -1,5 +1,5 @@
-//import React from 'react';
-const { createElement, render } = wp.element;
+import React from 'react';
+//const { createElement, render } = wp.element;
 import reflection from '../images/mirror.png';
 import reflection_2x from '../images/mirror@2x.png';
 import { InsightSection } from './InsightSection';

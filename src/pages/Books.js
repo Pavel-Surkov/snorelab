@@ -1,5 +1,5 @@
-//import React, { Component } from 'react';
-const { createElement, render, Component } = wp.element;
+import React, { Component } from 'react';
+//const { createElement, render, Component } = wp.element;
 import axios from 'axios';
 
 export class Books extends Component {

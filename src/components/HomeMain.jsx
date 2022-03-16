@@ -1,5 +1,5 @@
-//import React from 'react';
-const { createElement, render } = wp.element;
+import React from 'react';
+//const { createElement, render } = wp.element;
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import squareLogo from '../images/icons/sl-logo-icon.png';
 import squareLogo_2x from '../images/icons/sl-logo-icon@2x.png';

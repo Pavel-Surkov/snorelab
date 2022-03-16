@@ -6,20 +6,10 @@
 	"author": "Tania Rascia",
 	"license": "MIT",
 	"scripts": {
-		"build": "wp-scripts build",
-		"check-engines": "wp-scripts check-engines",
-		"check-licenses": "wp-scripts check-licenses",
-		"format": "wp-scripts format",
-		"lint:css": "wp-scripts lint-style",
-		"lint:js": "wp-scripts lint-js",
-		"lint:md:docs": "wp-scripts lint-md-docs",
-		"lint:md:js": "wp-scripts lint-md-js",
-		"lint:pkg-json": "wp-scripts lint-pkg-json",
-		"packages-update": "wp-scripts packages-update",
-		"plugin-zip": "wp-scripts plugin-zip",
-		"start": "wp-scripts start",
-		"test:e2e": "wp-scripts test-e2e",
-		"test:unit": "wp-scripts test-unit-js"
+		"start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
+		"build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+		"lint": "eslint 'src/**/*.js' || true",
+		"prettify": "prettier --write 'src/**/*.js'"
 	},
 	"keywords": [
 		"webpack",

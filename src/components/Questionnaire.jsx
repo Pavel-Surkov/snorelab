@@ -1,5 +1,5 @@
-//import React from 'react';
-const { createElement, render } = wp.element;
+import React from 'react';
+//const { createElement, render } = wp.element;
 
 export const Questionnaire = ({ questions, btnTitle }) => {
 	return (

@@ -1,5 +1,5 @@
-//import React from 'react';
-const { createElement, render } = wp.element;
+import React from 'react';
+//const { createElement, render } = wp.element;
 import { collectDataBlocks, accessDataBlocks, contactDataBlocks } from '@/helpers/privacyContent';
 import { TextPageBlock } from './TextPageBlock';
 

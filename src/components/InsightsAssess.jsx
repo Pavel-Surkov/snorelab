@@ -1,5 +1,5 @@
-//import React from 'react';
-const { createElement, render } = wp.element;
+import React from 'react';
+//const { createElement, render } = wp.element;
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const InsightsAssess = ({ light, titleClass, titleText, articles }) => {

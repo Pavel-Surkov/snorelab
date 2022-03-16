@@ -1,5 +1,5 @@
-//import React, { useState, useEffect } from 'react';
-const { createElement, render, useState, useEffect } = wp.element;
+import React, { useState, useEffect } from 'react';
+//const { createElement, render, useState, useEffect } = wp.element;
 
 export const InsightSection = props => {
 	const [customMargin, setCustomMargin] = useState('auto');

@@ -1,5 +1,5 @@
-//import React from 'react';
-const { createElement, render } = wp.element;
+import React from 'react';
+//const { createElement, render } = wp.element;
 import { InsightsTabs } from '../components/InsightsTabs';
 import { InsightsFeautured } from '../components/InsightsFeautured';
 import { InsightsArticles } from '../components/InsightsArticles';

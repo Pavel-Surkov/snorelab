@@ -1,5 +1,5 @@
-//import React from 'react';
-const { createElement, render } = wp.element;
+import React from 'react';
+//const { createElement, render } = wp.element;
 import { HomeMain } from '../components/HomeMain';
 import { HomeDescription } from '../components/HomeDescription';
 import { HomeReviews } from '../components/HomeReviews';
