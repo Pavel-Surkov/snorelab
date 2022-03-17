@@ -41,9 +41,9 @@
 			background: image('starry-sky-2.png') no-repeat center;
 		}
 		&__reviews {
-			@include flex(column, flex-start, flex-start, wrap);
 			max-height: 1000px;
-			gap: 10px;
+			column-count: 2;
+			column-gap: 10px;
 			&-wrapper {
 				text-align: center;
 				padding-bottom: 125px;
@@ -61,10 +61,18 @@
 		}
 		&__review {
 			padding: 24px 50px;
-			max-width: calc(50% - 5px);
 			background: rgba($white, 0.05);
 			border-radius: 10px;
 			text-align: left;
+			width: 100%;
+			display: grid;
+			grid-template-rows: 1fr auto;
+			break-inside: avoid;
+			margin-bottom: 10px;
+			&:nth-last-child(2),
+			&:last-child {
+				margin-bottom: 0;
+			}
 			&-top {
 				@include flex();
 				justify-content: space-between;
@@ -83,6 +91,9 @@
 				font-size: 1.8rem;
 				line-height: calc(25 / 18);
 				color: $gray-500;
+				&:last-child {
+					margin-bottom: 20px;
+				}
 			}
 			&-author {
 				font-size: 1.8rem;
