@@ -4,7 +4,7 @@ import useFetch from '../hooks/useFetch';
 
 export const ReviewsPage = () => {
   const reviews = useFetch(
-    'https://snorelab.ux-mind.pro/wp-json/wp/v2/reviews?category=reviews-page-reviews',
+    'https://snorelab.ux-mind.pro/wp-json/wp/v2/reviews?reviews_categories=12',
     {}
   );
 

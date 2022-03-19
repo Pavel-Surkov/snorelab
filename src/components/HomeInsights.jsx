@@ -5,7 +5,7 @@ import useFetch from '../hooks/useFetch';
 
 export const HomeInsights = () => {
   const posts = useFetch(
-    'https://snorelab.ux-mind.pro/wp-json/wp/v2/posts',
+    'https://snorelab.ux-mind.pro/wp-json/wp/v2/posts?categories=9',
     {}
   );
   const tags = useFetch('https://snorelab.ux-mind.pro/wp-json/wp/v2/tags', {});

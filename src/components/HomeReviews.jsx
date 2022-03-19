@@ -15,7 +15,7 @@ export const HomeReviews = React.memo(() => {
   const [slidesPerView, setSlidesPerView] = useState(0);
   const paginationRef = useRef(null);
   const reviews = useFetch(
-    'https://snorelab.ux-mind.pro/wp-json/wp/v2/reviews?category=home-reviews',
+    'https://snorelab.ux-mind.pro/wp-json/wp/v2/reviews?reviews_categories=11',
     {}
   );
 

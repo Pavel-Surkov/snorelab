@@ -41,7 +41,7 @@
 			background: image('starry-sky-2.png') no-repeat center;
 		}
 		&__reviews {
-			max-height: 1000px;
+			display: block;
 			column-count: 2;
 			column-gap: 10px;
 			&-wrapper {
@@ -69,7 +69,6 @@
 			grid-template-rows: 1fr auto;
 			break-inside: avoid;
 			margin-bottom: 10px;
-			&:nth-last-child(2),
 			&:last-child {
 				margin-bottom: 0;
 			}
