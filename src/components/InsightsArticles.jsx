@@ -1,16 +1,10 @@
 import React from 'react';
-import useFetch from '../hooks/useFetch';
+
 //const { createElement, render } = wp.element;
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-export const InsightsArticles = () => {
-  const posts = useFetch(
-    'https://snorelab.ux-mind.pro/wp-json/wp/v2/posts?categories=10',
-    {}
-  );
-  const tags = useFetch('https://snorelab.ux-mind.pro/wp-json/wp/v2/tags', {});
-
-  if (!posts.data) {
+export const InsightsArticles = ({ posts, tags }) => {
+  if (!posts.state) {
     return (
       <section className="insights-articles">
         <div className="insights-articles__wrapper">
@@ -33,7 +27,7 @@ export const InsightsArticles = () => {
             All articles
           </h2>
           <ul className="insights-articles__list">
-            {posts.data.map((post) => {
+            {posts.state.map((post) => {
               return (
                 <li className="insights-articles__item-wrapper" key={post.id}>
                   <div className="insights-articles__item">
@@ -52,7 +46,7 @@ export const InsightsArticles = () => {
                       <div className="order-lg-0 insights-articles__item-flags">
                         {/* This method adds flag links and adds commas correctly */}
                         {post.tags.map((tag, i, arr) => {
-                          const tagData = tags.data.find(
+                          const tagData = tags.state.data.find(
                             (item) => item.id === tag
                           );
 

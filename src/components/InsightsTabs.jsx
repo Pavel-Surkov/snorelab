@@ -1,69 +1,81 @@
 import React, { useState, useEffect, useRef } from 'react';
 //const { createElement, render, useState, useEffect, useRef } = wp.element;
-import { insightTabs, m_insightTabs } from '../helpers/variables';
+// import { insighttags, m_insighttags } from '../helpers/variables';
 
-export const InsightsTabs = () => {
-	const [tabsArr, setTabsArr] = useState(insightTabs);
-	const [activeTab, setActiveTab] = useState(null);
+export const InsightsTabs = ({ tags, activeTag }) => {
+  const tagsContainerRef = useRef(null);
 
-	const tabsContainerRef = useRef(null);
+  // Custom tags for screen width < 991px
+  // useEffect(() => {
+  // if (window.innerWidth < 991) {
+  //   tagsArr === m_insighttags ? false : settagsArr(m_insighttags);
+  // } else {
+  //   tagsArr === insighttags ? false : settagsArr(insighttags);
+  // }
+  // }, [window.innerWidth]);
 
-	useEffect(() => {
-		const activeTab = document.querySelectorAll('.tabs-btn_active');
+  const handletagsClick = (e, tagText, id) => {
+    const target = e.target.closest('.tabs-btn');
 
-		if (activeTab) {
-			setActiveTab(activeTab);
-		}
-	}, []);
+    if (target) {
+      const tabName = tagText.toLowerCase();
+      const tabs = Array.from(tagsContainerRef.current.children);
 
-	useEffect(
-		() => {
-			if (window.innerWidth < 991) {
-				tabsArr === m_insightTabs ? false : setTabsArr(m_insightTabs);
-			} else {
-				tabsArr === insightTabs ? false : setTabsArr(insightTabs);
-			}
-		},
-		[window.innerWidth]
-	);
+      tabs.forEach((tab) => tab.classList.remove('tabs-btn_active'));
 
-	const handleTabsClick = e => {
-		const target = e.target.closest('.tabs-btn');
+      target.classList.add('tabs-btn_active');
 
-		if (target) {
-			const tabs = Array.from(tabsContainerRef.current.children);
-			tabs.forEach(tab => tab.classList.remove('tabs-btn_active'));
+      activeTag.update({ target, text: tabName, id });
+    }
+  };
 
-			target.classList.add('tabs-btn_active');
+  if (!tags.state) {
+    return (
+      <section className="insights-tabs">
+        <div className="insights-tabs__wrapper">
+          <div className="container">
+            <div className="insights-tabs__content">
+              <h1 className="title title_fade title_size-l insights-tabs__title">
+                Insights
+              </h1>
+              <h2 className="title title_size-m">Loading tags...</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
-			setActiveTab(target);
-		}
-	};
+  return (
+    <section className="insights-tabs">
+      <div className="insights-tabs__wrapper">
+        <div className="container">
+          <div className="insights-tabs__content">
+            <h1 className="title title_fade title_size-l insights-tabs__title">
+              Insights
+            </h1>
+            <div ref={tagsContainerRef} className="tabs-container">
+              {tags.state.map((tag, i) => {
+                let className = `btn tabs-btn`;
 
-	return (
-		<section className="insights-tabs">
-			<div className="insights-tabs__wrapper">
-				<div className="container">
-					<div className="insights-tabs__content">
-						<h1 className="title title_fade title_size-l insights-tabs__title">Insights</h1>
-						<div ref={tabsContainerRef} onClick={evt => handleTabsClick(evt)} className="tabs-container">
-							{tabsArr.map(tab => {
-								{
-									/* Adds ref to default active tab */
-								}
-								const classList =
-									tab.text.toLowerCase() === 'all' ? 'btn tabs-btn tabs-btn_active' : 'btn tabs-btn';
+                if (i === 0) {
+                  className = `btn tabs-btn tabs-btn_active`;
+                }
 
-								return (
-									<a href="#" className={classList} key={tab.text}>
-										<div>{tab.text}</div>
-									</a>
-								);
-							})}
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	);
+                return (
+                  <button
+                    className={className}
+                    onClick={(evt) => handletagsClick(evt, tag.name, tag.id)}
+                    key={tag.id}
+                  >
+                    <div dangerouslySetInnerHTML={{ __html: tag.name }}></div>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
