@@ -43,7 +43,7 @@ export const Insight = () => {
   return (
     <main className="insight">
       <div className="insight-wrapper">
-        <InsightMain />
+        <InsightMain data={post.data} />
         <InsightHowUse />
         <InsightAdvice />
         <InsightStudies />
