@@ -71,22 +71,53 @@ export const InsightMain = ({ data }) => {
               </svg>
             </a>
           </div>
-          <div className="insight-text">
-            {data.acf.post_content[1].post_text.map((textItem) => {
-              return (
-                <p key={textItem.post_text_paragraph.slice(0, 10)}>
-                  {textItem.post_text_paragraph}
-                </p>
-              );
+          {data.acf.post_content
+            .filter((item, i) => i > 0)
+            .map((post, i) => {
+              if (i > 2) {
+                return null;
+              }
+
+              switch (post.post_element_type) {
+                case 'text': {
+                  return (
+                    <div
+                      className="insight-text"
+                      key={`${post.post_element_type + i}`}
+                    >
+                      {post.post_text.map((textItem) => {
+                        return (
+                          <p key={textItem.post_text_paragraph.slice(0, 10)}>
+                            {textItem.post_text_paragraph}
+                          </p>
+                        );
+                      })}
+                    </div>
+                  );
+                }
+                case 'image': {
+                  return (
+                    <div
+                      className="insight-img"
+                      key={`${post.post_element_type + i}`}
+                    >
+                      <img
+                        src={post.post_image_1x.url}
+                        srcSet={
+                          post.post_image_2x.url
+                            ? `${post.post_image_1x.url} 1x, ${post.post_image_2x.url} 2x`
+                            : null
+                        }
+                        alt=""
+                      />
+                    </div>
+                  );
+                }
+                default: {
+                  return null;
+                }
+              }
             })}
-          </div>
-          <div className="insight-img">
-            <img
-              src={data.acf.post_content[2].post_image_1x.url}
-              srcSet={`${data.acf.post_content[2].post_image_1x.url} 1x, ${data.acf.post_content[2].post_image_2x.url} 2x`}
-              alt=""
-            />
-          </div>
         </div>
       </div>
     </section>
