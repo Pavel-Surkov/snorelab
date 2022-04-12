@@ -1,6 +1,6 @@
 .insight {
 	&-wrapper {
-		max-width: 900px;
+		max-width: 890px;
 		margin: 0 auto;
 	}
 	&-img {
@@ -47,9 +47,13 @@
 		& p {
 			color: $gray-500;
 			margin: 0;
+			margin-bottom: 15px;
 			font-size: 4rem;
 			line-height: calc(50 / 40);
 			text-align: center;
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 		&__title {
 			margin-bottom: 23px;
