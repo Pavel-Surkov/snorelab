@@ -21,7 +21,9 @@ export const InsightSection = (props) => {
       <div className="insight-section__wrapper">
         <div className="container">
           <h2
-            className="title title_size-m insight-section__title"
+            className={`title title_size-m insight-section__title ${
+              props.titleClassName ? props.titleClassName : null
+            }`}
             style={{ marginBottom: `${customMargin}px` }}
           >
             {props.title}

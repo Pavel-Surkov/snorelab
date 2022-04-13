@@ -14,12 +14,15 @@ import { InsightsRelative } from '../components/InsightsRelative';
 import { calculateTextWidth } from '../helpers/functions';
 
 export const Insight = () => {
+  // const [currentPath, setCurrentPath] = useState(
+  // 'https://snorelab.ux-mind.pro/introducing-our-new-app-snoregym/'
+  // );
   const [currentPath, setCurrentPath] = useState(window.location.href);
   const [currentSlug, setCurrentSlug] = useState(null);
 
   const post = usePost(
     'https://snorelab.ux-mind.pro/wp-json/wp/v2/posts',
-    'introducing-our-new-app-snoregym', // currentSlug
+    currentSlug,
     {}
   );
 
@@ -27,6 +30,8 @@ export const Insight = () => {
     const reversedPath = currentPath.split('/').reverse();
 
     const slug = reversedPath[0] === '' ? reversedPath[1] : reversedPath[0];
+
+    console.log(slug);
 
     setCurrentSlug(slug);
   }, [currentPath]);
@@ -38,7 +43,7 @@ export const Insight = () => {
     return () => {
       window.addEventListener('load', calculateTextWidth);
     };
-  }, []);
+  }, [post]);
 
   if (!post.data) {
     return null;
@@ -199,6 +204,15 @@ export const Insight = () => {
                       })}
                     </div>
                   </div>
+                );
+              }
+              case 'subtitle': {
+                return (
+                  <InsightSection
+                    titleClassName={'insight-section__title_s'}
+                    title={post.post_title}
+                    key={key}
+                  />
                 );
               }
               case 'title': {

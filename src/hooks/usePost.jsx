@@ -12,16 +12,22 @@ const usePost = (url, slug, options) => {
 
         const post = data.find((item) => item.slug === slug);
 
-        setData(post);
+        if (post) {
+          setData(post);
+        }
       } catch (err) {
         setError(err);
       }
     };
 
     fetchData();
-  }, []);
+  }, [slug]);
 
-  return { data, error };
+  if (data) {
+    return { data, error };
+  } else {
+    return { data: null, error: null };
+  }
 };
 
 export default usePost;
