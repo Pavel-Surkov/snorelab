@@ -6,56 +6,58 @@ import './helpers/events';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import {
-	Home,
-	HowWorks,
-	Reviews,
-	Insights,
-	Insight,
-	StopBang,
-	Epworth,
-	Faq,
-	Contact,
-	About,
-	Privacy,
-	Terms,
-	Careers,
-	Books
+  Home,
+  HowWorks,
+  Reviews,
+  Insights,
+  Insight,
+  StopBang,
+  Epworth,
+  Faq,
+  Contact,
+  About,
+  Privacy,
+  Terms,
+  Careers,
+  Books,
+  Shop,
 } from './pages';
 
 const PAGES = {
-	Home,
-	HowWorks,
-	Insights,
-	Insight,
-	StopBang,
-	Epworth,
-	Faq,
-	Reviews,
-	Contact,
-	About,
-	Privacy,
-	Terms,
-	Careers
+  Home,
+  HowWorks,
+  Insights,
+  Insight,
+  StopBang,
+  Epworth,
+  Faq,
+  Reviews,
+  Contact,
+  About,
+  Privacy,
+  Terms,
+  Careers,
+  Shop,
 };
 
-const renderPageElement = el => {
-	const Page = PAGES[el.id];
+const renderPageElement = (el) => {
+  const Page = PAGES[el.id];
 
-	if (!Page) {
-		return;
-	}
+  if (!Page) {
+    return;
+  }
 
-	const props = Object.assign({}, el.dataset);
+  const props = Object.assign({}, el.dataset);
 
-	const App = () => (
-		<div className="app-wrapper">
-			<Header />
-			<Page {...props} />
-			<Footer />
-		</div>
-	);
+  const App = () => (
+    <div className="app-wrapper">
+      <Header />
+      <Page {...props} />
+      <Footer />
+    </div>
+  );
 
-	ReactDOM.render(<App {...props} />, el);
+  ReactDOM.render(<App {...props} />, el);
 };
 
 export default renderPageElement;
