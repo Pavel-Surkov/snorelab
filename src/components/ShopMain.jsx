@@ -6,7 +6,7 @@ export const ShopMain = () => {
       <div className="shop-main__wrapper">
         <div className="container">
           <div className="shop-main__content">
-            <a href="##" className="link shop-main-btn">
+            <button className="link shop-main-btn">
               <svg
                 width="29"
                 height="30"
@@ -39,7 +39,7 @@ export const ShopMain = () => {
                   <i>Approved Product</i>
                 </p>
               </div>
-            </a>
+            </button>
             <h1 className="title title_fade title_size-l shop-main__title">
               SnoreLab's Recommended Products
             </h1>

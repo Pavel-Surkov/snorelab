@@ -1,0 +1,10 @@
+.shop-content {
+	&__wrapper {
+		padding-bottom: 259px;
+	}
+	&__content {
+		display: grid;
+		grid-template-columns: 16.05% 83.19%;
+		grid-gap: 10px;
+	}
+}
