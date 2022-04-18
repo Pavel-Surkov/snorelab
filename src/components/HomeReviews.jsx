@@ -13,7 +13,6 @@ SwiperCore.use([Pagination]);
 
 export const HomeReviews = React.memo(() => {
   const [slidesPerView, setSlidesPerView] = useState(0);
-  const paginationRef = useRef(null);
   const reviews = useFetch(
     'https://snorelab.ux-mind.pro/wp-json/wp/v2/reviews?reviews_categories=11',
     {}
@@ -56,7 +55,7 @@ export const HomeReviews = React.memo(() => {
           onSwiper={(swiper) => console.log(swiper)}
           pagination={{
             clickable: true,
-            el: paginationRef.current,
+            el: '.home-reviews__pagination',
           }}
           loop={true}
           initialSlide={3}
@@ -111,7 +110,7 @@ export const HomeReviews = React.memo(() => {
             );
           })}
           <div className="home-reviews__pagination-wrapper">
-            <div className="home-reviews__pagination" ref={paginationRef} />
+            <div className="home-reviews__pagination" />
           </div>
         </Swiper>
       </div>
