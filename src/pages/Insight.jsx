@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import usePost from '../hooks/usePost';
+import useFetch from '../hooks/useFetch';
 //const { createElement, render, useEffect } = wp.element;
 import { InsightSection } from '../components/InsightSection';
 import { InsightMain } from '../components/InsightMain';
@@ -14,17 +15,35 @@ import { InsightsRelative } from '../components/InsightsRelative';
 import { calculateTextWidth } from '../helpers/functions';
 
 export const Insight = () => {
-  // const [currentPath, setCurrentPath] = useState(
-  // 'https://snorelab.ux-mind.pro/introducing-our-new-app-snoregym/'
-  // );
-  const [currentPath, setCurrentPath] = useState(window.location.href);
+  const [currentPath, setCurrentPath] = useState(
+    'https://snorelab.ux-mind.pro/are-you-a-seasonal-snorer/'
+  );
+  // const [currentPath, setCurrentPath] = useState(window.location.href);
   const [currentSlug, setCurrentSlug] = useState(null);
+  const [currentTags, setCurrentTags] = useState(null);
+  const [loaded, setLoaded] = useState(false);
 
   const post = usePost(
     'https://snorelab.ux-mind.pro/wp-json/wp/v2/posts',
     currentSlug,
     {}
   );
+
+  const tags = useFetch('https://snorelab.ux-mind.pro/wp-json/wp/v2/tags', {});
+
+  // Sets tags of the article
+  useEffect(() => {
+    if (tags.data && post.data && !loaded) {
+      const postTagsIds = post.data.tags;
+
+      const postTags = tags.data.filter((tag) => postTagsIds.includes(tag.id));
+
+      console.log(postTags);
+
+      setCurrentTags(postTags);
+      setLoaded(true);
+    }
+  }, [tags, loaded]);
 
   useEffect(() => {
     const reversedPath = currentPath.split('/').reverse();
@@ -41,7 +60,7 @@ export const Insight = () => {
     window.onresize = () => calculateTextWidth();
 
     return () => {
-      window.addEventListener('load', calculateTextWidth);
+      window.removeEventListener('load', calculateTextWidth);
     };
   }, [post]);
 
@@ -52,7 +71,7 @@ export const Insight = () => {
   return (
     <main className="insight">
       <div className="insight-wrapper">
-        <InsightMain data={post.data} />
+        <InsightMain data={post.data} tags={currentTags} />
         {post.data.acf.post_content
           .filter((item, i) => i > 2)
           .map((post, i) => {
