@@ -1,8 +1,5 @@
 import React from 'react';
 //const { createElement, render } = wp.element;
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import insight_1 from '../images/insight-img-1.png';
-import insight_1_2x from '../images/insight-img-1@2x.png';
 
 export const InsightMain = ({ data, tags }) => {
   if (!data || !tags) {

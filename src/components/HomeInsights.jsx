@@ -91,7 +91,7 @@ export const HomeInsights = () => {
             })}
           </div>
           <div className="home-insights__read-more">
-            <a className="link btn btn-arrow" href="insights.html">
+            <a className="link btn btn-arrow" href="/insights">
               <div>Read more</div>
             </a>
           </div>
