@@ -6,17 +6,19 @@ import SwiperCore, { Pagination } from 'swiper';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { homeReviews } from '../helpers/variables';
 import { calculateSlidesPerView } from '../helpers/functions';
 
 SwiperCore.use([Pagination]);
 
 export const HomeReviews = React.memo(() => {
   const [slidesPerView, setSlidesPerView] = useState(0);
+
   const reviews = useFetch(
     'https://snorelab.ux-mind.pro/wp-json/wp/v2/reviews?reviews_categories=11',
     {}
   );
+
+  console.log(reviews);
 
   window.addEventListener('resize', () => {
     const slidesCount = calculateSlidesPerView();
@@ -94,6 +96,8 @@ export const HomeReviews = React.memo(() => {
                     <p>{review.acf.review_text}</p>
                     <div className="home-reviews__item-title">
                       <LazyLoadImage
+                        width="40"
+                        height="40"
                         src={review.acf.review_icon_x1.url}
                         srcSet={`${review.acf.review_icon_x1.url} 1x, ${
                           review.acf.review_icon_x1

@@ -304,15 +304,15 @@ export const insightArticles = [
 
 export const footerLinks = {
   support: [
-    { text: 'Contact us', link: 'contact.html' },
-    { text: 'FAQ', link: 'faq.html' },
-    { text: 'Privacy Policy', link: 'privacy.html' },
-    { text: 'Terms of Use', link: 'terms.html' },
+    { text: 'Contact us', link: '/contact' },
+    { text: 'FAQ', link: '/faq' },
+    { text: 'Privacy Policy', link: '/privacy' },
+    { text: 'Terms of Use', link: '/terms' },
   ],
   company: [
-    { text: 'About', link: 'about.html' },
-    { text: 'Careers', link: 'careers.html' },
-    { text: 'Press', link: 'press.html' },
+    { text: 'About', link: '/about' },
+    { text: 'Careers', link: '/careers' },
+    { text: 'Press', link: '/contact' },
   ],
 };
 

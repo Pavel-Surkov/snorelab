@@ -242,7 +242,7 @@ export const Insight = () => {
         {/* <InsightStudies /> */}
         <InsightReview />
         <InsightDownload />
-        <References />
+        <References references={post.data.acf.post_references} />
         <Share title="Share this article" links={shareInsightLinks} />
         <InsightsRelative />
       </div>
