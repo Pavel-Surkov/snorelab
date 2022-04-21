@@ -44,3 +44,34 @@
 		}
 	}
 }
+
+@media screen and (max-width: 991px) {
+	.shop-main {
+		&-btn {
+			margin-bottom: 15px;
+			margin-left: 0;
+		}
+		&__wrapper {
+			padding-top: 100px;
+			padding-bottom: 38px;
+			border-bottom: 1px solid $gray-500;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.shop-main {
+		&__title {
+			text-align: left;
+			margin-bottom: 12px;
+		}
+		&__content {
+			text-align: left;
+		}
+		&__note {
+			& p {
+				@include font(1.6rem, calc(20 / 16));
+			}
+		}
+	}
+}

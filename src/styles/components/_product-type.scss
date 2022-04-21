@@ -1,4 +1,6 @@
 .product-type {
+	padding: 40px 0;
+	padding-bottom: 50px;
 	&__title {
 		@include font(2rem, calc(30 / 20));
 		color: $black-100;
@@ -17,6 +19,14 @@
 			&_active {
 				opacity: 0.3;
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.product-type {
+		&__title {
+			margin-bottom: 13px;
 		}
 	}
 }
