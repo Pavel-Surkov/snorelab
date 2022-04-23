@@ -41,7 +41,7 @@
 			&::after {
 				transform: rotate(-90deg);
 			}
-			& + .accordion-content {
+			& + .accordion-content__wrapper {
 				display: block;
 				padding-bottom: 50px;
 				border-bottom: 1px solid $blue-350;
@@ -49,8 +49,18 @@
 		}
 	}
 	&-content {
-		display: none;
 		padding: 0;
+		&__wrapper {
+			display: none;
+			& img {
+				margin: 0 auto;
+				margin-bottom: 50px;
+				border-radius: 15px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
 		& .accordion-content {
 			&__list {
 				margin-bottom: 10px;
@@ -87,14 +97,6 @@
 			@include font(2.8rem, calc(45 / 28));
 			letter-spacing: -0.02em;
 			color: $gray-700;
-			&:last-child {
-				margin-bottom: 0;
-			}
-		}
-		& img {
-			margin: 0 auto;
-			margin-bottom: 50px;
-			border-radius: 15px;
 			&:last-child {
 				margin-bottom: 0;
 			}
