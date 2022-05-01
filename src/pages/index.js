@@ -13,3 +13,4 @@ export * from './Terms';
 export * from './Careers';
 export * from './Books';
 export * from './Shop';
+export * from './Product';

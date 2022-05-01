@@ -21,6 +21,7 @@ import {
   Careers,
   Books,
   Shop,
+  Product,
 } from './pages';
 
 const PAGES = {
@@ -38,6 +39,7 @@ const PAGES = {
   Terms,
   Careers,
   Shop,
+  Product,
 };
 
 const renderPageElement = (el) => {

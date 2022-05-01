@@ -43,6 +43,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Snorelab',
       favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/product.html', // template file
+      filename: 'product.html', // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Snorelab',
+      favicon: paths.src + '/images/favicon.png',
       template: paths.src + '/shop.html', // template file
       filename: 'shop.html', // output file
     }),
