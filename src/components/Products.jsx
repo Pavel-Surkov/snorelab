@@ -13,6 +13,7 @@ const products = [
   {
     id: '1',
     title: 'SnoreRx',
+    slug: 'snorerx',
     description:
       'SnoreRx is one of the best quality and most effective anti-snoring mouthpieces that you can buy online. This professional…',
     types: [{ name: 'Mouthpiesces', link: '/' }],
@@ -29,6 +30,7 @@ const products = [
   {
     id: '2',
     title: 'Vicks Warm Mist Humidifier',
+    slug: 'vicks',
     description:
       'Do you often wake up with a dry mouth and nose? Humidifiers are a great way to relieve snoring caused by nasal congestion and…',
     types: [
@@ -48,6 +50,7 @@ const products = [
   {
     id: '3',
     title: 'FitPlus Premium Wedge Pillow',
+    slug: 'FitPlus',
     description:
       'Do you snore when you sleep on your back? Wedge pillows allow you to sleep on your back whilst reducing the compressing effect of…',
     types: [
@@ -67,6 +70,7 @@ const products = [
   {
     id: '4',
     title: 'SnoreRx',
+    slug: 'snorerx',
     description:
       'SnoreRx is one of the best quality and most effective anti-snoring mouthpieces that you can buy online. This professional…',
     types: [{ name: 'Mouthpiesces', link: '/' }],
@@ -83,6 +87,7 @@ const products = [
   {
     id: '5',
     title: 'Vicks Warm Mist Humidifier',
+    slug: 'vicks',
     description:
       'Do you often wake up with a dry mouth and nose? Humidifiers are a great way to relieve snoring caused by nasal congestion and…',
     types: [
@@ -102,6 +107,7 @@ const products = [
   {
     id: '6',
     title: 'FitPlus Premium Wedge Pillow',
+    slug: 'FitPlus',
     description:
       'Do you snore when you sleep on your back? Wedge pillows allow you to sleep on your back whilst reducing the compressing effect of…',
     types: [
@@ -131,7 +137,7 @@ export const Products = () => {
                 <span>Exclusive SnoreLab discount code</span>
               </div>
             )}
-            <div className="product__img">
+            <a href="product.html" className="product__img">
               <LazyLoadImage
                 width="265"
                 height="210"
@@ -142,7 +148,7 @@ export const Products = () => {
                 }
                 alt="product"
               />
-            </div>
+            </a>
             <div className="product__flags">
               {/* This method adds flag links and adds commas correctly */}
               {product.types.map((type, i, arr) => {
@@ -158,9 +164,11 @@ export const Products = () => {
                 );
               })}
             </div>
-            <h3 className="title title_size-s product__title">
-              {product.title}
-            </h3>
+            <a href="product.html" className="link">
+              <h3 className="title title_size-s product__title">
+                {product.title}
+              </h3>
+            </a>
             <div className="product__note">
               <p>{product.description}</p>
             </div>
