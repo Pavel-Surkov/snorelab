@@ -10,16 +10,16 @@ import { HowWorksNotes } from '../components/HowWorksNotes';
 import { HowWorksBottom } from '../components/HowWorksIntro';
 
 export const HowWorks = () => {
-	return (
-		<main className="how-works">
-			<HowWorksMain />
-			<HowWorksSelect />
-			<HowWorksMake />
-			<HowWorksStart />
-			<HowWorksSleep />
-			<HowWorksSee />
-			<HowWorksNotes />
-			<HowWorksBottom />
-		</main>
-	);
+  return (
+    <main className="how-works">
+      <HowWorksMain />
+      <HowWorksSelect />
+      <HowWorksMake />
+      <HowWorksStart />
+      <HowWorksSleep />
+      <HowWorksSee />
+      <HowWorksNotes />
+      <HowWorksBottom />
+    </main>
+  );
 };
