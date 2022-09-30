@@ -1,5 +1,5 @@
 //import React from 'react';
-const { createElement, render } = wp.element;
+const { createElement, render, Fragment } = wp.element;
 import { InsightSection } from './InsightSection';
 
 const blockedNoseCauses = [
@@ -14,7 +14,7 @@ const blockedNoseCauses = [
 
 export const InsightStudies = () => {
 	return (
-		<React.Fragment>
+		<>
 			<InsightSection title={'What are the studies?'}>
 				<div className="insight-text">
 					<p>When designing SnoreGym, we looked at a number of different studies.</p>
@@ -96,6 +96,6 @@ export const InsightStudies = () => {
 					</ul>
 				</div>
 			</InsightSection>
-		</React.Fragment>
+		</>
 	);
 };

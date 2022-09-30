@@ -12,7 +12,7 @@ const Footer = () => {
 						<div className="row">
 							<div className="col-12 col-lg-4">
 								<div className="footer__col-1">
-									<a href="index.html" className="logo footer-logo">
+									<a href="/" className="logo footer-logo">
 										<img src={logo} alt="logo" />
 									</a>
 									<p>The Snoring Management App for iOS and Android</p>
@@ -468,7 +468,7 @@ const Footer = () => {
 						</div>
 					</div>
 					<div className="footer-bottom">
-						<p>© 2021 SnoreLab. All rights reserved</p>
+						<p>© 2022 SnoreLab. All rights reserved</p>
 					</div>
 				</div>
 			</div>

@@ -1,8 +1,8 @@
 //import React from 'react';
-const { createElement, render } = wp.element;
+const { createElement, render, forwardRef } = wp.element;
 import { navigationLinks } from '../helpers/variables';
 
-export const MobileMenu = React.forwardRef((props, menuElement) => {
+export const MobileMenu = forwardRef((props, menuElement) => {
 	return (
 		<div ref={menuElement} className="m-menu">
 			<div className="m-menu__wrapper">

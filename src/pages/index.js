@@ -1,5 +1,6 @@
 export * from './Home';
 export * from './HowWorks';
+export * from './SuccessStories';
 export * from './Reviews';
 export * from './Insights';
 export * from './Insight';
@@ -11,4 +12,5 @@ export * from './About';
 export * from './Privacy';
 export * from './Terms';
 export * from './Careers';
-export * from './Books';
+export * from './Shop';
+export * from './Product';

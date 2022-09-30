@@ -9,7 +9,7 @@ const medicalServicesBlock = {
 const creatingAccountBlock = {
 	title: 'Creating an Account and Your Eligibility',
 	content: `
-		<p>To use certain features within the app, such as the cloud backup, you are required to create an account and will be asked to provide information including your full name, email address, age and sex. This information will be used in accordance with our <a href="privacy.html" class="link">Privacy Policy</a>. You agree to provide accurate information and that you will update your details if they change.</p>
+		<p>To use certain features within the app, such as the cloud backup, you are required to create an account and will be asked to provide information including your full name, email address, age and sex. This information will be used in accordance with our <a href="/privacy" class="link">Privacy Policy</a>. You agree to provide accurate information and that you will update your details if they change.</p>
 		<p>If you are under 18, your parent or guardian must read and accept the terms of this agreement. By using the app, you confirm that your parent or guardian has read and accepted the terms.</p>
 	`
 };
@@ -17,8 +17,8 @@ const creatingAccountBlock = {
 const useBlock = {
 	title: 'Your Use of The App, Website and Other Communication Channels',
 	content: `
-		<p>Any information submitted by you through the app, or snoring data recorded whilst using the app is governed by SnoreLab’s <a href="privacy.html" class="link">Privacy Policy</a>. You are responsible for all your activity within the app. If you submit feedback via the app or directly via the support email channels, you are responsible for these communications.</p>
-		<p>We collect certain information when you use our website, answer questionnaires or engage with us via social media. This information is collected regardless of whether or not you have a SnoreLab account and your use of these channels is not to be considered private. Information as to what this data includes, why it is collected and how it is handled by us and others can be found in our <a href="privacy.html" class="link">Privacy Policy</a>.</p>
+		<p>Any information submitted by you through the app, or snoring data recorded whilst using the app is governed by SnoreLab’s <a href="/privacy" class="link">Privacy Policy</a>. You are responsible for all your activity within the app. If you submit feedback via the app or directly via the support email channels, you are responsible for these communications.</p>
+		<p>We collect certain information when you use our website, answer questionnaires or engage with us via social media. This information is collected regardless of whether or not you have a SnoreLab account and your use of these channels is not to be considered private. Information as to what this data includes, why it is collected and how it is handled by us and others can be found in our <a href="/privacy" class="link">Privacy Policy</a>.</p>
 	`
 };
 

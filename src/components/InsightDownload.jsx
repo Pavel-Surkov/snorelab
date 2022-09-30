@@ -23,10 +23,10 @@ export const InsightDownload = () => {
 				</svg>
 				<div className="container">
 					<div className="insight-download__info-apps">
-						<a href="##" className="link insight-download__info-app google-play-btn">
+						<a target="_blank" href="https://play.google.com/store/apps/details?id=com.snorelab.app" className="link insight-download__info-app google-play-btn">
 							<img src={googlePlay} alt="google play" />
 						</a>
-						<a href="##" className="link insight-download__info-app app-store-btn">
+						<a target="_blank" href="https://itunes.apple.com/app/id529443604" className="link insight-download__info-app app-store-btn">
 							<img src={appStore} alt="app store" />
 						</a>
 					</div>

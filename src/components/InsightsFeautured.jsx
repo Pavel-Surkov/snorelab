@@ -18,14 +18,14 @@ export const InsightsFeautured = () => {
 							<div className="insights-feautured__content-wrapper">
 								<div className="insights-feautured__content-flags">
 									<span>
-										<a className="link" href="#">
+										<a className="link" href="/insights/?category=solutions">
 											Solutions
 										</a>
 									</span>
 								</div>
 
 								<h3 className="title title_size-m insights-feautured__content-title">
-									<a href="insight.html" className="link">
+									<a href="/insight" className="link">
 										Introducing Our New App — SnoreGym
 									</a>
 								</h3>

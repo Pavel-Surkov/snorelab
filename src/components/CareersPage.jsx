@@ -1,10 +1,10 @@
 //import React from 'react';
-const { createElement, render } = wp.element;
+const { createElement, render, forwardRef, useRef } = wp.element;
 import { CareersForm } from './CareersForm';
 
 const currentJobsArr = ['iOS Developer', 'Android Developer'];
 
-export const CareersPage = React.forwardRef((props, ref) => {
+export const CareersPage = forwardRef((props, ref) => {
 	return (
 		<section className="careers-page">
 			<div className="careers-page__wrapper">

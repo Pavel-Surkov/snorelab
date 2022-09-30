@@ -7,6 +7,7 @@ import phone_1 from '../images/phone1.png';
 import phone_1_2x from '../images/phone1@2x.png';
 import phone_2 from '../images/phone2.png';
 import phone_2_2x from '../images/phone2@2x.png';
+import star2 from '../images/star-2.svg';
 
 export const HomeMain = () => {
 	return (
@@ -30,7 +31,7 @@ export const HomeMain = () => {
 									and discovering solutions.
 								</p>
 								<div className="home-main__info-apps">
-									<a href="##" className="link home-main__info-app google-play-btn">
+									<a target="_blank" href="https://play.google.com/store/apps/details?id=com.snorelab.app" className="link home-main__info-app google-play-btn">
 										<svg
 											width="28"
 											height="32"
@@ -237,7 +238,7 @@ export const HomeMain = () => {
 											/>
 										</svg>
 									</a>
-									<a href="##" className="link home-main__info-app app-store-btn">
+									<a target="_blank" href="https://itunes.apple.com/app/id529443604" className="link home-main__info-app app-store-btn">
 										<svg
 											width="26"
 											height="32"
@@ -351,7 +352,8 @@ export const HomeMain = () => {
 							<div className="home-main__phones">
 								<LazyLoadImage src={phone_1} srcSet={`${phone_1} 1x, ${phone_1_2x} 2x`} alt="" />
 								<LazyLoadImage src={phone_2} srcSet={`${phone_2} 1x, ${phone_2_2x} 2x`} alt="" />
-								<svg
+				        <img className="bg-light-4" alt="" src={star2} />
+								{/*<svg
 									width="1371"
 									height="1309"
 									viewBox="0 0 1371 1309"
@@ -394,7 +396,7 @@ export const HomeMain = () => {
 											<stop offset="1" stopColor="#3FAFDE" />
 										</linearGradient>
 									</defs>
-								</svg>
+								</svg>*/}
 							</div>
 						</div>
 					</div>

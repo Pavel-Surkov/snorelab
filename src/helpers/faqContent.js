@@ -1,5 +1,5 @@
-import whatIsSnoring from '@/images/what-is-snoring.png';
-import whatIsSnoring_2x from '@/images/what-is-snoring@2x.png';
+import whatIsSnoring from '../images/what-is-snoring.png';
+import whatIsSnoring_2x from '../images/what-is-snoring@2x.png';
 
 import audioRecordings1 from '../images/audioRecordings-1.png';
 import audioRecordings1_2x from '../images/audioRecordings-1@2x.png';

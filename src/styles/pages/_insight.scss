@@ -1,6 +1,6 @@
 .insight {
 	&-wrapper {
-		max-width: 900px;
+		max-width: 890px;
 		margin: 0 auto;
 	}
 	&-img {
@@ -47,9 +47,13 @@
 		& p {
 			color: $gray-500;
 			margin: 0;
+			margin-bottom: 15px;
 			font-size: 4rem;
 			line-height: calc(50 / 40);
 			text-align: center;
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 		&__title {
 			margin-bottom: 23px;
@@ -194,12 +198,33 @@
 		}
 		&__btns {
 			margin-top: 30px;
+			position: relative;
 		}
 		&__btn {
 			margin-right: 10px;
 			&:last-child {
 				margin-right: 0;
 			}
+		}
+		&__content {
+			position: relative;
+		}
+		&__feedback {
+			background: rgba($white, 0.05);
+			display: inline-block;
+			padding: 0.833em;
+			border-radius: 10px;
+			& p {
+				margin: 0;
+				@include font(2.4rem, calc(30 / 24));
+			}
+		}
+		&__text {
+			margin: 0;
+			margin-bottom: 48px;
+			color: $gray-800;
+			@include font(2.8rem, calc(45 / 28));
+			letter-spacing: -0.02em;
 		}
 	}
 }

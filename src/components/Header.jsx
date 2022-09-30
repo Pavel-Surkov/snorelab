@@ -1,11 +1,11 @@
 //import React from 'react';
-const { createElement, render } = wp.element;
+const { createElement, render, createRef } = wp.element;
 import logo from '../images/logo.svg';
 import { MobileMenu } from './MobileMenu';
 import { navigationLinks } from '../helpers/variables';
 
 const Header = () => {
-	const menuElementRef = React.createRef();
+	const menuElementRef = createRef();
 
 	const handleMenuClick = e => {
 		const menuBtn = e.target.closest('#m-menu__button');
@@ -27,7 +27,7 @@ const Header = () => {
 					<div className="row">
 						<div className="col-6 col-lg-3">
 							<div className="header__logo">
-								<a className="logo" href="index.html">
+								<a className="logo" href="/">
 									<img src={logo} alt="logo" />
 								</a>
 							</div>

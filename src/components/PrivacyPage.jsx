@@ -1,6 +1,6 @@
 //import React from 'react';
 const { createElement, render } = wp.element;
-import { collectDataBlocks, accessDataBlocks, contactDataBlocks } from '@/helpers/privacyContent';
+import { collectDataBlocks, accessDataBlocks, contactDataBlocks } from '../helpers/privacyContent';
 import { TextPageBlock } from './TextPageBlock';
 
 export const PrivacyPage = () => {
