@@ -1,16 +1,16 @@
 //import React from 'react';
-const { createElement, render } = wp.element;
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import phone_3 from '../images/phone3.png';
-import phone_3_2x from '../images/phone3@2x.png';
-import star3 from '../images/star-3.svg';
-import star4 from '../images/star-4.svg';
-import star5 from '../images/star-5.svg';
+const { createElement, render } = wp.element
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import phone_3 from '../images/phone3.png'
+import phone_3_2x from '../images/phone3@2x.png'
+import star3 from '../images/star-3.svg'
+import star4 from '../images/star-4.svg'
+import star5 from '../images/star-5.svg'
 // import { descriptionCards } from '@/h elpers/variables';
 
 export const HomeDescription = ({ cards }) => {
   if (!cards) {
-    return null;
+    return null
   }
 
   return (
@@ -66,8 +66,8 @@ export const HomeDescription = ({ cards }) => {
                     </linearGradient>
                   </defs>
                 </svg>*/}
-                <img className="bg-light-5" alt="" src={star3} />
-                <img className="bg-light-6" alt="" src={star4} />
+                <LazyLoadImage className="bg-light-5" alt="" src={star3} />
+                <LazyLoadImage className="bg-light-6" alt="" src={star4} />
                 <LazyLoadImage
                   src={phone_3}
                   srcSet={`${phone_3} 1x, ${phone_3_2x} 2x`}
@@ -102,7 +102,7 @@ export const HomeDescription = ({ cards }) => {
             </div>
           </div>
         </div>
-        <img className="bg-light-7" alt="" src={star5} />
+        <LazyLoadImage className="bg-light-7" alt="" src={star5} />
         {/*<svg
           width="462"
           height="1003"
@@ -117,5 +117,5 @@ export const HomeDescription = ({ cards }) => {
         </svg>*/}
       </div>
     </section>
-  );
-};
+  )
+}

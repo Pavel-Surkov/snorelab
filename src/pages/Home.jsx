@@ -1,27 +1,27 @@
 //import React from 'react';
-const { createElement, render } = wp.element;
-import useFetch from '../hooks/useFetch';
+const { createElement, render } = wp.element
+import useFetch from '../hooks/useFetch'
 //const { createElement, render } = wp.element;
-import { HomeMain } from '../components/HomeMain';
-import { HomeDescription } from '../components/HomeDescription';
-import { HomeReviews } from '../components/HomeReviews';
-import { PartnerApp } from '../components/PartnerApp';
-import { HomeInsights } from '../components/HomeInsights';
-import star from '../images/star.png';
-import star2 from '../images/star-2.png';
+import { HomeMain } from '../components/HomeMain'
+import { HomeDescription } from '../components/HomeDescription'
+import { HomeReviews } from '../components/HomeReviews'
+import { PartnerApp } from '../components/PartnerApp'
+import { HomeInsights } from '../components/HomeInsights'
+import star from '../images/star.png'
+import star2 from '../images/star-2.png'
 
 export const Home = () => {
-  let descriptionCards = [];
-  let appCards = [];
+  let descriptionCards = []
+  let appCards = []
 
   const homeData = useFetch(
     'https://snorelab.ux-mind.pro/wp-json/wp/v2/pages?slug=home-page',
     {}
-  );
+  )
 
   if (homeData.data) {
-    descriptionCards = homeData.data[0].acf.description_cards;
-    appCards = homeData.data[0].acf.partner_description_cards;
+    descriptionCards = homeData.data[0].acf.description_cards
+    appCards = homeData.data[0].acf.partner_description_cards
   }
 
   return (
@@ -31,8 +31,8 @@ export const Home = () => {
       <HomeReviews />
       <PartnerApp cards={appCards} />
       <HomeInsights />
-      <img className="bg-light-1" alt="" src={star} />
-      <img className="bg-light-2" alt="" src={star2} />
+      <LazyLoadImage className="bg-light-1" alt="" src={star} />
+      <LazyLoadImage className="bg-light-2" alt="" src={star2} />
       {/*<svg
         data-svg="home-decorative"
         width="872"
@@ -86,5 +86,5 @@ export const Home = () => {
         </defs>
       </svg>*/}
     </main>
-  );
-};
+  )
+}

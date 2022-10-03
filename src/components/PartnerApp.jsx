@@ -1,15 +1,15 @@
 //import React from 'react';
-const { createElement, render } = wp.element;
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import phones_1 from '../images/phones1.png';
-import phones_1_2x from '../images/phones1@2x.png';
-import star6 from '../images/star-6.svg';
-import star7 from '../images/star-7.svg';
+const { createElement, render } = wp.element
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import phones_1 from '../images/phones1.png'
+import phones_1_2x from '../images/phones1@2x.png'
+import star6 from '../images/star-6.svg'
+import star7 from '../images/star-7.svg'
 // import { partnerDescriptionCards } from '../helpers/variables';
 
 export const PartnerApp = ({ cards }) => {
   if (!cards) {
-    return null;
+    return null
   }
   return (
     <section className="home-partner">
@@ -79,7 +79,7 @@ export const PartnerApp = ({ cards }) => {
                     srcSet={`${phones_1} 1x, ${phones_1_2x} 2x`}
                     alt=""
                   />
-                  <img className="bg-light-9" alt="" src={star7} />
+                  <LazyLoadImage className="bg-light-9" alt="" src={star7} />
                   {/*<svg
                     width="925"
                     height="879"
@@ -471,7 +471,7 @@ export const PartnerApp = ({ cards }) => {
             </div>
           </div>
         </div>
-        <img className="bg-light-8" alt="" src={star7} />
+        <LazyLoadImage className="bg-light-8" alt="" src={star7} />
         {/*<svg
           data-svg="decorative"
           width="397"
@@ -487,5 +487,5 @@ export const PartnerApp = ({ cards }) => {
         </svg>*/}
       </div>
     </section>
-  );
-};
+  )
+}
